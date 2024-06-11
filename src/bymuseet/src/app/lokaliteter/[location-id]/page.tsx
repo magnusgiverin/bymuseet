@@ -4,6 +4,7 @@ import locations from '@/app/Utils/data/locations';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import BreakLine from '@/app/Utils/BreakLine';
+import { Title } from '@/app/Components/Title';
 
 export default function Lokalitet() {
     const pathname = usePathname();
@@ -44,10 +45,10 @@ export default function Lokalitet() {
     }, [location]);
 
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <>
             {location ? (
-                <div>
-                    <h1 className="text-2xl font-bold mb-4">{location.name}</h1>
+                <div className="bg-white md:p-8 mt-2 md:mt-0 rounded-md shadow-md w-full">
+                    <Title text={location.name} />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
                         {images.map((image, index) => (
                             <div key={index} className="relative w-full h-64">
@@ -61,12 +62,14 @@ export default function Lokalitet() {
                             </div>
                         ))}
                     </div>
-                    <BreakLine/>
+                    {images.length !== 0 && (
+                        <BreakLine />   
+                    )}
                     <p>{location.description}</p>
                 </div>
             ) : (
                 <p>Location not found</p>
             )}
-        </main>
+        </>
     );
 }

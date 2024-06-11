@@ -1,16 +1,14 @@
 'use client';
 
 import shortcuts from '../Utils/data/shortcuts';
-import NextBreadcrumb from './BreadCrumbs';
-import Dropdown from './Dropdown';
 import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className='sm:sticky sm:top-0 fixed bottom-0 sm:relative z-50 bg-white font-semibold w-full'>
-      <div className="flex justify-center p-2">
+    <nav className='p-2 sm:sticky sm:top-0 fixed bottom-0 sm:relative z-50 font-semibold w-full bg-white bg-opacity-75 backdrop-blur-xl'>
+      <div className="flex justify-center">
         <div className="xs:hidden flex items-center">
           {shortcuts.map((shortcut, index) => {
             const isActive = pathname === shortcut.url;

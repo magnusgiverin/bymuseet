@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bymuseetImage from '../../../public/images/bymuseet.png'; // Adjust the path as necessary
+import bymuseetImage from '../../../public/images/pynt/bymuseet.png'; // Adjust the path as necessary
 
 export default function Medlem() {
     return (
