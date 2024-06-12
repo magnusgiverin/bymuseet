@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Icons from '@/app/Utils/Icons';
 import Button from '@/app/Components/Button';
+import { spacedText } from '@/app/page';
 
 export default function Lokalitet() {
     const pathname = usePathname();
@@ -56,7 +57,7 @@ export default function Lokalitet() {
                         <div className="bg-white p-2 md:p-8 shadow-md md:w-2/3 w-full md:rounded-s-md">
                             <SubTitle text={location.name} />
                             <p className="whitespace-pre-wrap">{location.description}</p>
-                            <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left'/>
+                            <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' />
                         </div>
                         <div className="md:h-auto h-60 md:w-1/3 w-full relative shadow-md">
                             <Image
@@ -103,17 +104,8 @@ export default function Lokalitet() {
                                     objectFit="cover"
                                     className="rounded-md"
                                 />
-                                <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-end z-10">
-                                    <div className="w-full text-center backdrop-blur-md rounded-md p-2 text-white">
-                                        <h3 className="text-lg font-medium">{loc.name}</h3>
-                                    </div>
-                                </div>
-                                <div className="lg:hidden absolute inset-0 flex items-end justify-center z-10">
-                                    <div className="w-full text-center backdrop-blur-md rounded-md p-2 text-white">
-                                        <h3 className="text-sm font-medium">{loc.name}</h3>
-                                    </div>
-                                </div>
                             </Link>
+                            <p className="whitespace-pre-wrap mt-2 text-sm">{spacedText(loc.name)}</p>
                         </div>
                     ))}
                 </div>

@@ -95,9 +95,9 @@ const Om = () => {
   )
 }
 
-const Lokaliteter = () => {
-  const spacedText = (text: string) => text.toUpperCase().split('').join(' ');
+export const spacedText = (text: string) => text.toUpperCase().split('').join(' ');
 
+const Lokaliteter = () => {
   return (
     <div className="bg-white p-8 md:rounded-md shadow-md w-full ">
       <Title text="lokaliteter" />
