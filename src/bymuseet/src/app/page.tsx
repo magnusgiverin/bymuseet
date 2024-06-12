@@ -20,16 +20,16 @@ const Velkommen = () => {
           className="absolute inset-0 z-0"
         />
         <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center z-10">
-          <div className="text-center backdrop-blur-xl rounded-2xl p-10 text-white">
-            <h1 className="text-xl font-bold">V E L K O M M E N</h1>
-            <p className="text-lg">Utforsk våre lokaliteter, lær om hva vi gjør, og bli medlem hos oss.</p>
+          <div className="text-left backdrop-blur-xl rounded-2xl p-8 text-white">
+            <h1 className="text-2xl font-bold">V E L K O M M E N</h1>
+            <p className="text-md">Utforsk våre lokaliteter, lær om hva vi gjør, og bli medlem hos oss.</p>
           </div>
         </div>
       </div>
 
-      <div className="lg:hidden flex flex-col items-center gap-2 w-full mt-4">
+      <div className="lg:hidden flex flex-col items-center gap-2 w-full">
         <h1 className="text-xl font-bold text-center">V E L K O M M E N</h1>
-        <p className="text-lg text-center">Utforsk våre lokaliteter, lær om hva vi gjør, og bli medlem hos oss.</p>
+        <p className="text-lg text-center">Utforsk, lær, og bli medlem hos oss.</p>
       </div>
     </>
   );
@@ -110,12 +110,12 @@ const Lokaliteter = () => {
                   />
                 <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-end z-10">
                   <div className="w-full text-center backdrop-blur-md rounded-md p-2 text-white">
-                    <h3 className="text-lg font-medium">{location.name}</h3>
+                    <h3 className="text-md font-medium">{location.name}</h3>
                   </div>
                 </div>
                 <div className="lg:hidden absolute inset-0 flex items-end justify-center z-10">
                   <div className="w-full text-center backdrop-blur-md rounded-md p-2 text-white">
-                    <h3 className="text-sm font-medium">{location.name}</h3>
+                    <h3 className="text-md font-medium">{location.name}</h3>
                   </div>
                 </div>
               </Link>
