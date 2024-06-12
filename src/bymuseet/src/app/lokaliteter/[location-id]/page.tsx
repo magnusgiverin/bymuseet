@@ -86,7 +86,7 @@ export default function Lokalitet() {
                 <div className="flex flex-row flex-wrap justify-center gap-8">
                     {locations.filter(loc => loc.id !== location?.id).map((loc) => (
                         <div key={loc.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
-                            <Link className="relative lg:w-96 lg:h-48 sm:w-64 sm:h-32 w-[330px] w-screen h-48 bg-gray-200 overflow-hidden cursor-pointer" href={`/lokaliteter/${location.id}`}>
+                            <Link className="relative lg:w-96 lg:h-48 sm:w-64 sm:h-32 w-[330px] w-screen h-48 bg-gray-200 overflow-hidden cursor-pointer" href={`/lokaliteter/${location?.id}`}>
                                 <Image
                                     src={loc.image}
                                     alt={loc.name}
