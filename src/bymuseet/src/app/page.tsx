@@ -106,8 +106,8 @@ const Lokaliteter = () => {
                   alt={location.name}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-md inset-0 z-0"
-                />
+                  className="rounded-md"
+                  />
                 <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-end z-10">
                   <div className="w-full text-center backdrop-blur-md rounded-md p-2 text-white">
                     <h3 className="text-lg font-medium">{location.name}</h3>
