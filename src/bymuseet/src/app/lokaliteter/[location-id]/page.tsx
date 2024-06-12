@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react';
 import locations from '@/app/Utils/data/locations';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import BreakLine from '@/app/Utils/BreakLine';
-import { SubTitle, Title } from '@/app/Components/Title';
+import { SubTitle } from '@/app/Components/Title';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
@@ -48,41 +47,57 @@ export default function Lokalitet() {
     }, [location]);
 
     return (
-        <main className='mt-20'>
+        <main className='mt-5 md:mt-20'>
             {location ? (
-                <div className="bg-white md:p-8 p-2 mt-2 md:mt-0 rounded-0 md:rounded-md shadow-md w-full">
-                    <Title text={location.name} />
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
-                        {images.map((image, index) => (
-                            <div key={index} className="relative w-full h-64">
-                                <Image
-                                    src={image}
-                                    alt={`${location.name} ${index + 1}`}
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className="rounded-lg"
-                                />
-                            </div>
-                        ))}
+                <>
+                    <div className="flex flex-col md:flex-row">
+                    <div className="bg-white p-8 shadow-md md:w-2/3 w-full md:rounded-s-md">
+                            <SubTitle text={location.name.toUpperCase()} />
+                            <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med stor frivillig innsats og engasjement. Museet har samlet sett mye kompetanse og forvalter en viktig bygningsmasse, og en stor samling gjenstander og dokumenter. Organisasjonen har god anseelse lokalt, og har et positivt forhold til offentlige myndigheter. Bymuseet driver viktig formidling på digitale plattformer, og er en sentral aktør og samarbeidspartner under arrangement i Trehusbyen Levanger.</p>
+                            <p>Behovet for å styrke formidlingsaktiviteten og ønsket om å få på plass en egen hjemmeside ble drøftet under et arbeidsseminar og en strategisamling i 2023, der styret og utvalgene drøftet status, utfordringer og satsninger i årene framover. Museet eier og forvalter flere vernede og kulturhistorisk viktige bygninger, og har også samlinger som skal registreres, forvaltes og oppbevares på en forsvarlig måte.</p>
+                        </div>
+                        <div className="md:h-auto h-60 md:w-1/3 w-full relative">
+                            <Image
+                                src={location.image}
+                                alt="Fasade Levanger"
+                                objectFit="cover"
+                                layout="fill"
+                                className="md:rounded-e-md"
+                            />
+                        </div>
                     </div>
-                    {images.length !== 0 && (
-                        <BreakLine />
-                    )}
-                    <p>{location.description}</p>
-                    <div className="mt-8">
+                    <div className="mt-8 flex justify-center">
                         <button
                             onClick={() => router.push("/")}
-                            className="bg-green-800 text-white px-4 py-2 rounded-0 md:rounded-md shadow-md hover:bg-green-700 transition"
+                            className="bg-green-800 text-white px-4 py-2 rounded-md shadow-md hover:bg-green-700 transition"
                         >
                             Gå tilbake
                         </button>
                     </div>
-                </div>
+                    {images.length !== 0 && (
+                        <div className="mt-10 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
+                        <SubTitle text='A L B U M' />
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+                            {images.map((image, index) => (
+                                <div key={index} className="relative w-full h-64">
+                                    <Image
+                                        src={image}
+                                        alt={`${location.name} ${index + 1}`}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="rounded-lg"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    )}
+                </>
             ) : (
                 <p>Location not found</p>
             )}
             <div className="mt-10 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
-                <SubTitle text='Utforsk våre andre lokaliteter' />
+                <SubTitle text='U T F O R S K' />
                 <div className="flex flex-row flex-wrap justify-center gap-8">
                     {locations.filter(loc => loc.id !== location?.id).map((loc) => (
                         <div key={loc.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">

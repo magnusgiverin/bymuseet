@@ -8,9 +8,9 @@ import pynt2 from "../../public/images/pynt/pynt-2.jpg";
 
 import { SubTitle, Title } from "./Components/Title";
 
-const Home = () => {
+const Velkommen = () => {
   return (
-    <main className="flex flex-col items-center justify-between gap-4 md:gap-8">
+    <>
       <div className="relative w-screen h-60 md:h-80 lg:h-96 sm:p-2 sm:px-2">
         <Image
           src={bakgrunnImage}
@@ -21,21 +21,26 @@ const Home = () => {
         />
         <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center z-10">
           <div className="text-center backdrop-blur-xl rounded-2xl p-10 text-white">
-            <h1 className="text-xl font-bold">Velkommen til Bymuseet i Levanger</h1>
+            <h1 className="text-xl font-bold">V E L K O M M E N</h1>
             <p className="text-lg">Utforsk våre lokaliteter, lær om hva vi gjør, og bli medlem hos oss.</p>
           </div>
         </div>
       </div>
 
       <div className="lg:hidden flex flex-col items-center gap-2 w-full mt-4">
-        <h1 className="text-xl font-bold text-center">Velkommen til Bymuseet i Levanger</h1>
+        <h1 className="text-xl font-bold text-center">V E L K O M M E N</h1>
         <p className="text-lg text-center">Utforsk våre lokaliteter, lær om hva vi gjør, og bli medlem hos oss.</p>
       </div>
+    </>
+  );
+}
 
-
+const Formål = () => {
+  return (
+    <>
       <div className="flex flex-col md:flex-row">
         <div className="bg-white p-8 md:rounded-s-md shadow-md md:w-2/3 w-full">
-          <SubTitle text="Vårt formål" />
+          <SubTitle text="F O R M Å L" />
           <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med formålet å samle, bevare, forske i og formidle kulturhistorisk materiale i og omkring Levanger Sentrum, med spesiell vekt på følgende områder:</p>
           <ul className="list-disc ml-8 mb-4">
             <li>Embedsmannskultur og arbeiderkultur, sosial- og kvinnehistorie</li>
@@ -60,6 +65,13 @@ const Home = () => {
           />
         </div>
       </div>
+    </>
+  )
+}
+
+const Om = () => {
+  return (
+    <>
       <div className="flex flex-col md:flex-row">
         <div className="md:h-auto h-60 md:w-1/3 w-full relative">
           <Image
@@ -71,14 +83,20 @@ const Home = () => {
           />
         </div>
         <div className="bg-white p-8 shadow-md md:w-2/3 w-full md:rounded-e-md">
-          <SubTitle text="Litt om oss" />
+          <SubTitle text="O M   O S S" />
           <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med stor frivillig innsats og engasjement. Museet har samlet sett mye kompetanse og forvalter en viktig bygningsmasse, og en stor samling gjenstander og dokumenter. Organisasjonen har god anseelse lokalt, og har et positivt forhold til offentlige myndigheter. Bymuseet driver viktig formidling på digitale plattformer, og er en sentral aktør og samarbeidspartner under arrangement i Trehusbyen Levanger.</p>
           <p>Behovet for å styrke formidlingsaktiviteten og ønsket om å få på plass en egen hjemmeside ble drøftet under et arbeidsseminar og en strategisamling i 2023, der styret og utvalgene drøftet status, utfordringer og satsninger i årene framover. Museet eier og forvalter flere vernede og kulturhistorisk viktige bygninger, og har også samlinger som skal registreres, forvaltes og oppbevares på en forsvarlig måte.</p>
         </div>
       </div>
-      
+    </>
+  )
+}
+
+const Lokaliteter = () => {
+  return (
+    <>
       <div className="bg-white p-8 md:rounded-md shadow-md w-full ">
-        <Title text="Våre lokaliteter" />
+        <Title text="L O K A L I T E T E R" />
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
           {locations.map((location) => (
             <div key={location.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
@@ -105,6 +123,17 @@ const Home = () => {
           ))}
         </div>
       </div>
+    </>
+  );
+}
+
+const Home = () => {
+  return (
+    <main className="flex flex-col items-center justify-between gap-4 md:gap-8">
+      <Velkommen />
+      <Formål />
+      <Om />
+      <Lokaliteter />
     </main>
   );
 };
