@@ -53,7 +53,7 @@ export default function Lokalitet() {
             {location ? (
                 <>
                     <div className="flex flex-col md:flex-row">
-                        <div className="bg-white py-8 px-2 md:p-8 shadow-md lg:w-2/3 w-full md:rounded-s-md">
+                        <div className="bg-white py-8 px-4 md:p-8 shadow-md lg:w-2/3 w-full md:rounded-s-md">
                             <SubTitle text={location.name} />
                             <p className="whitespace-pre-wrap">{location.description}</p>
                             <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' />
@@ -69,7 +69,7 @@ export default function Lokalitet() {
                         </div>
                     </div>
                     {images.length !== 0 && (
-                        <div className="my-10 bg-white rounded-0 md:rounded-md md:p-8 py-8 px-2 ">
+                        <div className="my-10 bg-white rounded-0 md:rounded-md md:p-8 py-8 px-4 ">
                             <SubTitle text='album' />
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
                                 {images.map((image, index) => (
