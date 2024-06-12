@@ -1,11 +1,14 @@
 'use client';
 import Button from "../Components/Button";
+import { Title } from "../Components/Title";
 
 export default function Utleie() {
     return (
-        <main className="flex flex-col items-center justify-between pt-24 gap-10">
-            <p>Utleie Side Kommer snart</p>
-            <Button icon="ArrowLeft_sm" text={"tilbake"} iconPosition="left"/>
+        <main className="flex flex-col items-center justify-center pt-24 gap-2 w-full">
+            <span className="w-full">
+            <Title text="Utleie"/>
+            </span>
+            <Button icon={"ArrowLeft_sm"} text={"tilbake"} iconPosition="left"/>
         </main>
     );
 }
