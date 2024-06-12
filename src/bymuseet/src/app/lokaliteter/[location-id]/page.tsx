@@ -97,7 +97,7 @@ export default function Lokalitet() {
                 <p>Location not found</p>
             )}
             <div className="mt-10 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
-                <SubTitle text='U T F O R S K' />
+                <SubTitle text='U T F O R S K   V I D E R E' />
                 <div className="flex flex-row flex-wrap justify-center gap-8">
                     {locations.filter(loc => loc.id !== location?.id).map((loc) => (
                         <div key={loc.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
