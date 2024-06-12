@@ -4,9 +4,9 @@ import { useEffect } from 'react';
 
 // Extend the Window interface to include the FB property
 declare global {
-  interface Window {
-    FB: any;
-  }
+    interface Window {
+        FB: any;
+    }
 }
 
 export default function Formidling() {
@@ -48,6 +48,7 @@ export default function Formidling() {
                     <a href="https://www.facebook.com/bymuseetilevanger">Bymuseet i Levanger</a>
                 </blockquote>
             </div>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MoCbFMMTQF254Jsaf84HGwCX-6QLj2I&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
         </main>
     );
 }
