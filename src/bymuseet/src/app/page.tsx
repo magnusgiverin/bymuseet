@@ -40,7 +40,7 @@ const Formål = () => {
     <>
       <div className="flex flex-col md:flex-row">
         <div className="bg-white p-8 md:rounded-s-md shadow-md md:w-2/3 w-full">
-          <SubTitle text="F O R M Å L" />
+          <SubTitle text="formål" />
           <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med formålet å samle, bevare, forske i og formidle kulturhistorisk materiale i og omkring Levanger Sentrum, med spesiell vekt på følgende områder:</p>
           <ul className="list-disc ml-8 mb-4">
             <li>Embedsmannskultur og arbeiderkultur, sosial- og kvinnehistorie</li>
@@ -83,7 +83,7 @@ const Om = () => {
           />
         </div>
         <div className="bg-white p-8 shadow-md md:w-2/3 w-full md:rounded-e-md">
-          <SubTitle text="O M   O S S" />
+          <SubTitle text="om oss" />
           <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med stor frivillig innsats og engasjement. Museet har samlet sett mye kompetanse og forvalter en viktig bygningsmasse, og en stor samling gjenstander og dokumenter. Organisasjonen har god anseelse lokalt, og har et positivt forhold til offentlige myndigheter. Bymuseet driver viktig formidling på digitale plattformer, og er en sentral aktør og samarbeidspartner under arrangement i Trehusbyen Levanger.</p>
           <p>Behovet for å styrke formidlingsaktiviteten og ønsket om å få på plass en egen hjemmeside ble drøftet under et arbeidsseminar og en strategisamling i 2023, der styret og utvalgene drøftet status, utfordringer og satsninger i årene framover. Museet eier og forvalter flere vernede og kulturhistorisk viktige bygninger, og har også samlinger som skal registreres, forvaltes og oppbevares på en forsvarlig måte.</p>
         </div>
@@ -96,7 +96,7 @@ const Lokaliteter = () => {
   return (
     <>
       <div className="bg-white p-8 md:rounded-md shadow-md w-full ">
-        <Title text="L O K A L I T E T E R" />
+        <Title text="lokaliteter" />
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
           {locations.map((location) => (
             <div key={location.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">

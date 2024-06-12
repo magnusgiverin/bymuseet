@@ -52,7 +52,7 @@ export default function Lokalitet() {
                 <>
                     <div className="flex flex-col md:flex-row">
                     <div className="bg-white p-8 shadow-md md:w-2/3 w-full md:rounded-s-md">
-                            <SubTitle text={location.name.toUpperCase()} />
+                            <SubTitle text={location.name} />
                             <p className="whitespace-pre-wrap">{location.description}</p>
                         </div>
                         <div className="md:h-auto h-60 md:w-1/3 w-full relative">
@@ -75,7 +75,7 @@ export default function Lokalitet() {
                     </div>
                     {images.length !== 0 && (
                         <div className="mt-8 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
-                        <SubTitle text='A L B U M' />
+                        <SubTitle text='album' />
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
                             {images.map((image, index) => (
                                 <div key={index} className="relative w-full h-64">
