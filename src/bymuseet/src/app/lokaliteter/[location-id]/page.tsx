@@ -54,12 +54,12 @@ export default function Lokalitet() {
             {location ? (
                 <>
                     <div className="flex flex-col md:flex-row">
-                        <div className="bg-white p-2 md:p-8 shadow-md md:w-2/3 w-full md:rounded-s-md">
+                        <div className="bg-white py-8 px-2 md:p-8 shadow-md lg:w-2/3 w-full md:rounded-s-md">
                             <SubTitle text={location.name} />
                             <p className="whitespace-pre-wrap">{location.description}</p>
                             <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' />
                         </div>
-                        <div className="md:h-auto h-60 md:w-1/3 w-full relative shadow-md">
+                        <div className="md:h-auto h-60 lg:w-1/3 w-full relative shadow-md">
                             <Image
                                 src={location.image}
                                 alt="Fasade Levanger"
@@ -70,7 +70,7 @@ export default function Lokalitet() {
                         </div>
                     </div>
                     {images.length !== 0 && (
-                        <div className="my-10 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
+                        <div className="my-10 bg-white rounded-0 md:rounded-md md:p-8 py-8 px-2 ">
                             <SubTitle text='album' />
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
                                 {images.map((image, index) => (
@@ -92,7 +92,7 @@ export default function Lokalitet() {
                 <p>Location not found</p>
             )}
             <div className="mt-10 bg-white rounded-0 md:rounded-md p-8 ">
-                <SubTitle text='utforsk videre' />
+                <SubTitle text='utforsk videre' shortText='utforsk' />
                 <div className="flex flex-row flex-wrap justify-center gap-8">
                     {locations.filter(loc => loc.id !== location?.id).map((loc) => (
                         <div key={loc.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
