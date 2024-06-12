@@ -10,8 +10,8 @@ import { SubTitle, Title } from "./Components/Title";
 
 const Home = () => {
   return (
-    <main className="flex flex-col items-center justify-between gap-2 md:gap-8">
-      <div className="relative w-screen h-60 md:h-80 lg:h-96 sm:pt-2 sm:px-2">
+    <main className="flex flex-col items-center justify-between gap-4 md:gap-8">
+      <div className="relative w-screen h-60 md:h-80 lg:h-96 sm:p-2 sm:px-2">
         <Image
           src={bakgrunnImage}
           alt="Background image"
@@ -82,7 +82,7 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
           {locations.map((location) => (
             <div key={location.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <Link className="relative lg:w-96 lg:h-48 xs:w-64 xs:h-32 w-60 h-48 bg-gray-200 overflow-hidden cursor-pointer" href={`/lokaliteter/${location.id}`}>
+              <Link className="relative lg:w-96 lg:h-48 xs:w-64 xs:h-32 w-[300px] h-48 bg-gray-200 overflow-hidden cursor-pointer" href={`/lokaliteter/${location.id}`}>
                 <Image
                   src={location.image}
                   alt={location.name}

@@ -7,10 +7,10 @@ interface TitleProps {
 
 export const Title: React.FC<TitleProps> = ({ text, type }) => {
     return (
-        <h1 className="flex items-center justify-center text-2xl font-bold mb-8">
-            <span className={`sm:flex-grow sm:h-1 ${type === "white" ? 'bg-white' : 'bg-green-800'}`}></span>
+        <h1 className="flex items-center justify-center text-2xl font-black mb-8">
+            <span className={`sm:flex-grow sm:h-0.5 ${type === "white" ? 'bg-white' : 'bg-green-800'}`}></span>
             <span className="mx-4">{text}</span>
-            <span className={`sm:flex-grow sm:h-1 ${type === "white" ? 'bg-white' : 'bg-green-800'}`}></span>
+            <span className={`sm:flex-grow sm:h-0.5 ${type === "white" ? 'bg-white' : 'bg-green-800'}`}></span>
         </h1>
     );
 };
