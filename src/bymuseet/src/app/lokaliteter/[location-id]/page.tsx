@@ -53,8 +53,7 @@ export default function Lokalitet() {
                     <div className="flex flex-col md:flex-row">
                     <div className="bg-white p-8 shadow-md md:w-2/3 w-full md:rounded-s-md">
                             <SubTitle text={location.name.toUpperCase()} />
-                            <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med stor frivillig innsats og engasjement. Museet har samlet sett mye kompetanse og forvalter en viktig bygningsmasse, og en stor samling gjenstander og dokumenter. Organisasjonen har god anseelse lokalt, og har et positivt forhold til offentlige myndigheter. Bymuseet driver viktig formidling på digitale plattformer, og er en sentral aktør og samarbeidspartner under arrangement i Trehusbyen Levanger.</p>
-                            <p>Behovet for å styrke formidlingsaktiviteten og ønsket om å få på plass en egen hjemmeside ble drøftet under et arbeidsseminar og en strategisamling i 2023, der styret og utvalgene drøftet status, utfordringer og satsninger i årene framover. Museet eier og forvalter flere vernede og kulturhistorisk viktige bygninger, og har også samlinger som skal registreres, forvaltes og oppbevares på en forsvarlig måte.</p>
+                            <p className="whitespace-pre-wrap">{location.description}</p>
                         </div>
                         <div className="md:h-auto h-60 md:w-1/3 w-full relative">
                             <Image
