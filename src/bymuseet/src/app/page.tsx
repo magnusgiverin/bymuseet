@@ -57,6 +57,7 @@ const Formål = () => {
             <li>Å samle og bevare gjenstander i autentiske miljøer</li>
             <li>Å være effektive samfunnsaktører for historieformidling i Levanger og omegn</li>
           </ul>
+          <Button icon="ArrowRight_sm" text={"bli medlem"} link="/medlem"/>
         </div>
         <div className="md:h-auto md:rounded-e-md h-60 md:w-1/3 w-full relative shadow-md">
           <Image
