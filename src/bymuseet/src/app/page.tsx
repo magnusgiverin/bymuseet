@@ -55,7 +55,7 @@ const Formål = () => {
             <li>Å være effektive samfunnsaktører for historieformidling i Levanger og omegn</li>
           </ul>
         </div>
-        <div className="md:h-auto h-60 md:w-1/3 w-full relative">
+        <div className="md:h-auto md:rounded-e-md h-60 md:w-1/3 w-full relative shadow-md">
           <Image
             src={pynt1}
             alt="Sjøgata 1"
@@ -73,7 +73,7 @@ const Om = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row">
-        <div className="md:h-auto h-60 md:w-1/3 w-full relative">
+        <div className="md:rounded-s-md md:h-auto h-60 md:w-1/3 w-full relative shadow-md">
           <Image
             src={pynt2}
             alt="Fasade Levanger"
@@ -94,19 +94,17 @@ const Om = () => {
 
 const Lokaliteter = () => {
   return (
-    <>
       <div className="bg-white p-8 md:rounded-md shadow-md w-full ">
         <Title text="lokaliteter" />
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
           {locations.map((location) => (
             <div key={location.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <Link className="relative lg:w-96 lg:h-48 sm:w-64 sm:h-32 w-[330px] w-full h-48 overflow-hidden cursor-pointer" href={`/lokaliteter/${location.id}`}>
+              <Link className="shadow-md rounded-md relative lg:w-96 lg:h-48 sm:w-64 sm:h-32 w-[330px] w-full h-48 overflow-hidden cursor-pointer" href={`/lokaliteter/${location.id}`}>
                 <Image
                   src={location.image}
                   alt={location.name}
                   layout="fill"
-                  objectFit="cover"
-                  className="rounded-md"
+                  objectFit="cover rounded-md"
                   />
                 <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-end z-10">
                   <div className="w-full text-center backdrop-blur-md rounded-md p-2 text-white">
@@ -123,7 +121,6 @@ const Lokaliteter = () => {
           ))}
         </div>
       </div>
-    </>
   );
 }
 

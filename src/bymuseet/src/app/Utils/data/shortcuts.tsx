@@ -16,7 +16,7 @@ const shortcuts: ShortcutLink[] = [
         icon: <Icons name={"Hjem"}/>
     },
     {
-        header: 'Formidlig',
+        header: 'Formidling',
         description: 'Se våre tilbud',
         url: '/formidling',
         icon: <Icons name={"Formidling"}/>
