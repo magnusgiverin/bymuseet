@@ -9,6 +9,7 @@ import pynt2 from "../../public/images/pynt/pynt-2.jpg";
 import { SubTitle, Title } from "./Components/Title";
 import { useRouter } from "next/navigation";
 import Icons from "./Utils/Icons";
+import Button from "./Components/Button";
 
 const Velkommen = () => {
   return (
@@ -90,13 +91,7 @@ const Om = () => {
           <SubTitle text="om oss" />
           <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med stor frivillig innsats og engasjement. Museet har samlet sett mye kompetanse og forvalter en viktig bygningsmasse, og en stor samling gjenstander og dokumenter. Organisasjonen har god anseelse lokalt, og har et positivt forhold til offentlige myndigheter. Bymuseet driver viktig formidling på digitale plattformer, og er en sentral aktør og samarbeidspartner under arrangement i Trehusbyen Levanger.</p>
           <p>Behovet for å styrke formidlingsaktiviteten og ønsket om å få på plass en egen hjemmeside ble drøftet under et arbeidsseminar og en strategisamling i 2023, der styret og utvalgene drøftet status, utfordringer og satsninger i årene framover. Museet eier og forvalter flere vernede og kulturhistorisk viktige bygninger, og har også samlinger som skal registreres, forvaltes og oppbevares på en forsvarlig måte.</p>
-          <button
-            onClick={() => router.push("/om")}
-            className="flex flex-row items-center gap-4 whitespace-pre-wrap text-sm bg-green-800 text-white px-4 py-2 mt-8 rounded-md shadow-md hover:bg-green-700 transition"
-          >
-            L E S    M E R
-            <Icons name="ArrowRight_sm"/>
-          </button>
+          <Button icon="ArrowRight_sm" text={"les mer"} link="/om"/>
         </div>
       </div>
     </>

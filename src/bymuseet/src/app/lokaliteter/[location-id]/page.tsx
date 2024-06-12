@@ -7,6 +7,7 @@ import { SubTitle } from '@/app/Components/Title';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Icons from '@/app/Utils/Icons';
+import Button from '@/app/Components/Button';
 
 export default function Lokalitet() {
     const pathname = usePathname();
@@ -55,15 +56,7 @@ export default function Lokalitet() {
                         <div className="bg-white p-2 md:p-8 shadow-md md:w-2/3 w-full md:rounded-s-md">
                             <SubTitle text={location.name} />
                             <p className="whitespace-pre-wrap">{location.description}</p>
-                            <div className="mb-5 md:mb-0 flex justify-left">
-                                <button
-                                    onClick={() => router.push("/")}
-                                    className="flex flex-row items-center gap-4 whitespace-pre-wrap text-sm bg-green-800 text-white px-4 py-2 mt-8 rounded-md shadow-md hover:bg-green-700 transition"
-                                >   
-                                <Icons name="ArrowLeft_sm"/>
-                                    T I L B A K E
-                                </button>
-                            </div>
+                            <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left'/>
                         </div>
                         <div className="md:h-auto h-60 md:w-1/3 w-full relative shadow-md">
                             <Image

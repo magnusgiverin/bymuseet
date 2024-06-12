@@ -1,8 +1,11 @@
+'use client';
+import Button from "../Components/Button";
+
 export default function Utleie() {
     return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <p>Utleie</p>
-      </main>
+        <main className="flex flex-col items-center justify-between p-24 gap-10">
+            <p>Utleie Side Kommer snart</p>
+            <Button icon="ArrowLeft_sm" text={"tilbake"} iconPosition="left"/>
+        </main>
     );
-  }
-  
+}
