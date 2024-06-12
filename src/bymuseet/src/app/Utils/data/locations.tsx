@@ -30,7 +30,7 @@ const locations = [
     },
     {
       id: 'reinslyst-arbeiderbolig',
-      name: 'Reinslyst Arbeiderbolig',
+      name: 'Reinslyst',
       image: '/images/reinslyst-arbeiderbolig/reinslyst-arbeiderbolig-main.jpg',
       dir: '/images/reinslyst-arbeiderbolig/',
       description: 'Dette er en gammel arbeiderbolig som opprinnelig lå i Gamle Kongevei, ca 200 m fra Brusve.\n\nHer lå ca 7-8 små hus på Brusves grunn, og beboerne var stort sett husmenn med arbeidsplikt på gården. Boligen visr hvordan folk i små kår bodde og virket, i stor kontrast til de høyere sosiale lags overdådige levesett.',
