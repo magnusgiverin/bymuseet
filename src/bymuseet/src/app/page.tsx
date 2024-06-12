@@ -50,7 +50,7 @@ const Formål = () => {
           <li>Bilmuseet Hveding Auto</li>
         </ul>
         <p className="mb-4">Bymuseet skal være en aktiv aktør for kulturarven i Trehusbyen Levanger. Sammen med historielaget, biblioteket, fotomuseet og andre museer skal Bymuseet bidra med følgende:</p>
-        <ul className="list-disc ml-8 mb-4">
+        <ul className="list-disc ml-8">
           <li>Å formidle kunnskap for å lette forståelsen av den historiske utviklingen</li>
           <li>Å samle og bevare gjenstander i autentiske miljøer</li>
           <li>Å være effektive samfunnsaktører for historieformidling i Levanger og omegn</li>
