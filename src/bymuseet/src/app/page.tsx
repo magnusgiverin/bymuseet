@@ -7,9 +7,8 @@ import pynt1 from "../../public/images/pynt/pynt-1.jpg";
 import pynt2 from "../../public/images/pynt/pynt-2.jpg";
 
 import { SubTitle, Title } from "./Components/Title";
-import { useRouter } from "next/navigation";
-import Icons from "./Utils/Icons";
 import Button from "./Components/Button";
+import { spacedText } from "./Utils/spacedText";
 
 const Velkommen = () => {
   return (
@@ -94,8 +93,6 @@ const Om = () => {
     </>
   )
 }
-
-export const spacedText = (text: string) => text.toUpperCase().split('').join(' ');
 
 const Lokaliteter = () => {
   return (

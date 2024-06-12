@@ -6,9 +6,8 @@ import Image from 'next/image';
 import { SubTitle } from '@/app/Components/Title';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Icons from '@/app/Utils/Icons';
 import Button from '@/app/Components/Button';
-import { spacedText } from '@/app/page';
+import { spacedText } from '@/app/Utils/spacedText';
 
 export default function Lokalitet() {
     const pathname = usePathname();
