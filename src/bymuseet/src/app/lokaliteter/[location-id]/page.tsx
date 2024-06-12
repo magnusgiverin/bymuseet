@@ -65,14 +65,6 @@ export default function Lokalitet() {
                             />
                         </div>
                     </div>
-                    <div className="mt-8 flex justify-center">
-                        <button
-                            onClick={() => router.push("/")}
-                            className="bg-green-800 text-white px-4 py-2 rounded-md shadow-md hover:bg-green-700 transition"
-                        >
-                            Gå tilbake
-                        </button>
-                    </div>
                     {images.length !== 0 && (
                         <div className="mt-8 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
                         <SubTitle text='album' />
@@ -91,12 +83,20 @@ export default function Lokalitet() {
                         </div>
                     </div>
                     )}
+                    <div className="mt-8 flex justify-center">
+                        <button
+                            onClick={() => router.push("/")}
+                            className="text-lg bg-green-800 text-white px-4 py-2 rounded-md shadow-md hover:bg-green-700 transition"
+                        >
+                            Gå tilbake
+                        </button>
+                    </div>
                 </>
             ) : (
                 <p>Location not found</p>
             )}
             <div className="mt-10 bg-white rounded-0 md:rounded-md p-8 ">
-                <SubTitle text='utforsk mer' />
+                <SubTitle text='utforsk videre' />
                 <div className="flex flex-row flex-wrap justify-center gap-8">
                     {locations.filter(loc => loc.id !== location?.id).map((loc) => (
                         <div key={loc.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
