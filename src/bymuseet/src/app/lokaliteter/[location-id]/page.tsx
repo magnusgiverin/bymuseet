@@ -75,7 +75,7 @@ export default function Lokalitet() {
                         </button>
                     </div>
                     {images.length !== 0 && (
-                        <div className="mt-10 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
+                        <div className="mt-8 bg-white rounded-0 md:rounded-md md:p-8 p-2 ">
                         <SubTitle text='A L B U M' />
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
                             {images.map((image, index) => (
