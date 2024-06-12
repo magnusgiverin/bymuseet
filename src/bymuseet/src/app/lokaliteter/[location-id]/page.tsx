@@ -65,6 +65,9 @@ export default function Lokalitet() {
                             </div>
                         ))}
                     </div>
+                    {images.length !== 0 && (
+                        <BreakLine/>
+                    )}
                     <p>{location.description}</p>
                     <div className="mt-8">
                         <button
