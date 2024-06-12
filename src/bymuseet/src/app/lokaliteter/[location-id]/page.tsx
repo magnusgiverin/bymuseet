@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import locations from '@/app/Utils/data/locations';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { SubTitle } from '@/app/Components/Title';
+import { SubTitle, Title } from '@/app/Components/Title';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Button from '@/app/Components/Button';
@@ -54,7 +54,7 @@ export default function Lokalitet() {
                 <>
                     <div className="flex flex-col md:flex-row">
                         <div className="bg-white py-8 px-4 md:p-8 shadow-md lg:w-2/3 w-full md:rounded-s-md">
-                            <SubTitle text={location.name} />
+                            <Title text={location.name} />
                             <p className="whitespace-pre-wrap">{location.description}</p>
                             <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' />
                         </div>
