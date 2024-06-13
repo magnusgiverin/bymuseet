@@ -33,12 +33,6 @@ const shortcuts: ShortcutLink[] = [
         url: '/utleie',
         icon: <Icons name={"Utleie"}/>
     },
-    {
-        header: 'Bli medlem',
-        description: 'Check out our digital meme page',
-        url: '/medlem',
-        icon: <Icons name={"Medlem"}/>
-    },
 ]
 
 export default shortcuts;

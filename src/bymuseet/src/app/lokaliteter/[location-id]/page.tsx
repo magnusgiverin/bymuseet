@@ -2,9 +2,6 @@
 import { useEffect, useState } from 'react';
 import locations from '@/app/Utils/data/locations';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
-import { Title } from '@/app/Components/Title';
-import Button from '@/app/Components/Button';
 import Gallery from './Gallery';
 import Information from './Information';
 import Utforsk from '../../index/Utforsk';
