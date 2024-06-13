@@ -146,9 +146,9 @@ export default function Lokalitet() {
                     </div>
                     {/* Render Information Boxes */}
                     {location.info1 && (
-                        <div className='flex flex-col md:flex-row gap-10'>
+                        <div className='flex flex-col lg:flex-row gap-10'>
                             {(location.addressse || location.byggår || location.fredet || location.stilart) && (
-                                <div className='w-1/4 bg-white md:rounded-md p-8 mt-10'>
+                                <div className='w-full lg:w-1/4 bg-white md:rounded-md p-8 mt-10'>
                                     {Object.entries(location)
                                         .filter(([key, value]) => (['addresse', 'byggår', 'fredet', 'stilart']).includes(key))
                                         .map(([key, value]) => (
@@ -159,8 +159,8 @@ export default function Lokalitet() {
                                         ))}
                                 </div>
                             )}
-                            <div className={`mt-10 bg-white rounded-0 md:rounded-md p-8 ${location.addressse || location.byggår || location.fredet || location.stilart ? 'w-3/4' : 'w-full'}`}>
-                                <SubTitle text='informasjon' />
+                            <div className={`lg:mt-10 bg-white rounded-0 md:rounded-md w-full p-8 ${location.addressse || location.byggår || location.fredet || location.stilart ? 'lg:w-3/4' : ''}`}>
+                                <SubTitle text='informasjon' shortText='info'/>
                                 <div className="flex flex-col gap-4">
                                     {Object.entries(location)
                                         .filter(([key, value]) => key.includes("info"))
