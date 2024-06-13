@@ -13,7 +13,7 @@ const Utforsk: React.FC<UtforskProps> = ({ location }) => {
     const pathname = usePathname();
 
     return (
-        <div className="w-full my-10 bg-white rounded-0 md:rounded-md p-8 ">
+        <div className="w-full bg-white rounded-0 md:rounded-md p-8 ">
             {pathname === "/" ? (
                 <Title text='våre lokasjoner' shortText="lokasjoner" />
             ) : (
