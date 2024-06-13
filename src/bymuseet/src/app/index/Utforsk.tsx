@@ -17,7 +17,7 @@ const Utforsk: React.FC<UtforskProps> = ({ location }) => {
             {pathname === "/" ? (
                 <Title text='våre lokasjoner' shortText="lokasjoner" />
             ) : (
-                <SubTitle text='utforsk videre' shortText='utforsk' />
+                <SubTitle text='utforsk videre'/>
             )}
             <div className="flex flex-row flex-wrap justify-center gap-8">
                 {locations.filter(loc => loc.id !== location?.id).map((loc) => (
