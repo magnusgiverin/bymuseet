@@ -6,7 +6,7 @@ interface TitleProps {
     type?: string;
 }
 
-const spacedText = (text: string) => text.toUpperCase().split('').join('  ');
+const spacedText = (text: string) => text.toUpperCase().split('').join(' ');
 
 export const Title: React.FC<TitleProps> = ({ text, shortText, type }) => {
     return (
