@@ -50,8 +50,6 @@ export default function Lokalitet() {
             {location ? (
                 <>
                     <Introduction location={location}/>
-                    <Information location={location} />
-                    <Gallery images={images} location={location} />
                 </>
             ) : (
                 <p>Location not found</p>
