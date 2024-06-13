@@ -62,7 +62,7 @@ const locations: Location[] = [
     info: {
       info1: 'En typisk arbeiderbolig i ”nerbyen”. De fleste husene i dette kvartalet som var bygd opp etter 1897-brannen var i en etasje. Området ble kaldt ”Rotterdam” på grunn av de mange guttene fra denne bydelen som reiste til sjøs.',
       info2: 'Det har bodd opp til 11 mennesker i denne bygningen på bare 46m2 i grunnflate. Første eier var Konrad Barstad. Bygningen er oppkalt etter Emilie Eriksen, som ble 99 år, og bodde i boligen i Sjøgata 40 i 64 år. Emilies sønn, Erling overtok huset etter henne. Han bodde her i hele 84 år.',
-      info3: 'I 1913 ble taket ble taket hevet. Ellers er det gjort lite bygningsmessige endringer på bygningen som har høy grad av autentisitet med original bordkledning og originale vinduer. Bymuseet i Levanger eier i dag bygningen. De har restaurert både bolighus og uthus på en skånsom måte.',
+      info3: 'I 1913 ble taket hevet. Ellers er det gjort lite bygningsmessige endringer på bygningen som har høy grad av autentisitet med original bordkledning og originale vinduer. Bymuseet i Levanger eier i dag bygningen. De har restaurert både bolighus og uthus på en skånsom måte.',
     },
     facts: {
       byggår: 'ca. 1897',
