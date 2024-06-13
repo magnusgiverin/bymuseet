@@ -12,7 +12,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
             {location.info1 && (
                 <div className='flex flex-col lg:flex-row gap-10'>
                     {(location.addressse || location.byggår || location.fredet || location.stilart) && (
-                        <div className='w-full lg:w-1/4 bg-white md:rounded-md p-8 mt-10'>
+                        <div className='shadow-md w-full lg:w-1/4 bg-white md:rounded-md p-8 mt-10'>
                             {Object.entries(location)
                                 .filter(([key, value]) => (['addresse', 'byggår', 'fredet', 'stilart']).includes(key))
                                 .map(([key, value]) => (
@@ -23,7 +23,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
                                 ))}
                         </div>
                     )}
-                    <div className={`lg:mt-10 bg-white rounded-0 md:rounded-md w-full p-8 ${location.addressse || location.byggår || location.fredet || location.stilart ? 'lg:w-3/4' : ''}`}>
+                    <div className={`shadow-md lg:mt-10 bg-white rounded-0 md:rounded-md w-full p-8 ${location.addressse || location.byggår || location.fredet || location.stilart ? 'lg:w-3/4' : ''}`}>
                         <SubTitle text='informasjon' shortText='info' />
                         <div className="flex flex-col gap-4">
                             {Object.entries(location)
