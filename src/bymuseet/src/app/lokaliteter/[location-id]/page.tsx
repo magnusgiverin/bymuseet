@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { SubTitle, Title } from '@/app/Components/Title';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import Button from '@/app/Components/Button';
 import { spacedText } from '@/app/Utils/spacedText';
 
@@ -13,7 +12,6 @@ export default function Lokalitet() {
     const pathname = usePathname();
     const [images, setImages] = useState<string[]>([]);
     const location = locations.find((loc) => pathname.includes(loc.id));
-    const router = useRouter();
 
     useEffect(() => {
         if (location) {
@@ -49,7 +47,7 @@ export default function Lokalitet() {
     }, [location]);
 
     return (
-        <main className='my-10 md:mt-20'>
+        <main className='my-10'>
             {location ? (
                 <>
                     <div className="flex flex-col md:flex-row">
@@ -90,7 +88,7 @@ export default function Lokalitet() {
             ) : (
                 <p>Location not found</p>
             )}
-            <div className="mt-10 bg-white rounded-0 md:rounded-md p-8 ">
+            <div className="bg-white rounded-0 md:rounded-md p-8 ">
                 <SubTitle text='utforsk videre' shortText='utforsk' />
                 <div className="flex flex-row flex-wrap justify-center gap-8">
                     {locations.filter(loc => loc.id !== location?.id).map((loc) => (

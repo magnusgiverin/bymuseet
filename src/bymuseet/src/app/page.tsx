@@ -117,7 +117,7 @@ const Lokaliteter = () => {
 
 const Home = () => {
   return (
-    <main className="flex flex-col items-center justify-between gap-4 md:gap-8">
+    <main className="flex flex-col items-center justify-between gap-4 mb-4 md:mb-8 md:gap-8">
       <Velkommen />
       <Formål />
       <Om />
