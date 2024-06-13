@@ -23,7 +23,7 @@ export const Title: React.FC<TitleProps> = ({ text, shortText, type }) => {
 
 export const SubTitle: React.FC<TitleProps> = ({ text, shortText, type = 'green' }) => {
     return (
-        <h2 className="flex items-center justify-center text-base sm:text-md md:text-lg lg:text-xl font-bold mb-8">
+        <h2 className="flex items-center justify-center text-base sm:text-md md:text-lg lg:text-xl font-semi mb-8">
             <span className="whitespace-pre-wrap text-center">
                 <span className="block sm:hidden">{spacedText(shortText || text)}</span>
                 <span className="hidden sm:block">{spacedText(text)}</span>
