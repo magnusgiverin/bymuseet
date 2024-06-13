@@ -20,7 +20,7 @@ const Velkommen = () => {
           </div>
         </div>
   
-        <div className="lg:hidden flex flex-col items-center gap-2 w-full">
+        <div className="lg:hidden my-8 flex flex-col items-center gap-2 w-full">
           <h1 className="text-xl font-bold text-center">V E L K O M M E N</h1>
           <p className="text-lg text-center">Utforsk, lær, og bli medlem hos oss.</p>
         </div>
