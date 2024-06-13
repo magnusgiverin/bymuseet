@@ -7,7 +7,8 @@ import { Title } from '@/app/Components/Title';
 import Button from '@/app/Components/Button';
 import Gallery from './Gallery';
 import Information from './Information';
-import Utforsk from './Utforsk';
+import Utforsk from '../../index/Utforsk';
+import Introduction from './Introduction';
 
 export default function Lokalitet() {
     const pathname = usePathname();
@@ -51,22 +52,7 @@ export default function Lokalitet() {
         <main className='my-10'>
             {location ? (
                 <>
-                    <div className="flex flex-col md:flex-row">
-                        <div className="bg-white py-8 px-4 md:p-8 shadow-md lg:w-2/3 w-full md:rounded-s-md">
-                            <Title text={location.name} />
-                            <p className="whitespace-pre-wrap">{location.description}</p>
-                            <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' />
-                        </div>
-                        <div className="md:h-auto h-60 lg:w-1/3 w-full relative shadow-md">
-                            <Image
-                                src={location.image}
-                                alt="Fasade Levanger"
-                                objectFit="cover"
-                                layout="fill"
-                                className="md:rounded-e-md"
-                            />
-                        </div>
-                    </div>
+                    <Introduction location={location}/>
                     <Information location={location} />
                     <Gallery images={images} location={location} />
                 </>

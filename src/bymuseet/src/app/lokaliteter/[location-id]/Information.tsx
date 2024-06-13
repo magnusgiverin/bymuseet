@@ -14,11 +14,10 @@ const Information: React.FC<InformationProps> = ({ location }) => {
                     {location.facts && (
                         <div className='shadow-md w-full lg:w-1/4 bg-white md:rounded-md p-8 mt-10'>
                             {Object.entries(location.facts)
-                                .filter(([key, value]) => (['adresse', 'byggår', 'fredet', 'stilart']).includes(key))
                                 .map(([key, value]) => (
                                     <span key={key} className='flex flex-col pb-4'>
                                         <p className='font-bold text-green-800'>{spacedText(key) + ": "}</p>
-                                        <p>{value}</p>
+                                        <p className="whitespace-pre-wrap">{value}</p>
                                     </span>
                                 ))}
                         </div>

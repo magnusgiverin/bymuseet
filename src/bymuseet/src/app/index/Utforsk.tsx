@@ -1,17 +1,24 @@
-import { SubTitle } from "@/app/Components/Title";
+import { SubTitle, Title } from "@/app/Components/Title";
 import { spacedText } from "@/app/Utils/spacedText";
 import Link from "next/link";
 import Image from 'next/image';
 import locations, { Location } from '@/app/Utils/data/locations';
+import { usePathname } from "next/navigation";
 
 interface UtforskProps {
     location?: Location;
 }
 
 const Utforsk: React.FC<UtforskProps> = ({ location }) => {
+    const pathname = usePathname();
+
     return (
-        <div className="my-10 bg-white rounded-0 md:rounded-md p-8 ">
-            <SubTitle text='utforsk videre' shortText='utforsk' />
+        <div className="w-full my-10 bg-white rounded-0 md:rounded-md p-8 ">
+            {pathname === "/" ? (
+                <Title text='våre lokasjoner' shortText="lokasjoner" />
+            ) : (
+                <SubTitle text='utforsk videre' shortText='utforsk' />
+            )}
             <div className="flex flex-row flex-wrap justify-center gap-8">
                 {locations.filter(loc => loc.id !== location?.id).map((loc) => (
                     <div key={loc.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">

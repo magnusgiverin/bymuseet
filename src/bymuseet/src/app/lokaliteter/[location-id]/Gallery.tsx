@@ -2,6 +2,7 @@ import { SubTitle } from "@/app/Components/Title";
 import { useState } from "react";
 import Image from 'next/image';
 import { Location } from '@/app/Utils/data/locations';
+import { spacedText } from "@/app/Utils/spacedText";
 
 interface GalleryProps {
     images: string[];
@@ -46,6 +47,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
                                     layout="fill"
                                     objectFit="cover"
                                     className="rounded-lg"
+                                    sizes="(min-width: 640px) 50vw, (min-width: 1024px) 33.3vw, 100vw" // Adjust according to your grid setup
                                 />
                             </div>
                         ))}
@@ -56,12 +58,14 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
             {isOpen && selectedImage && imageDimensions && (
                 <div className="hidden md:block">
                     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-                        <div className="relative bg-white p-4 rounded-lg shadow-lg w-2/3 max-w-full max-h-[90vh] overflow-auto">
+                        <div className="m-20 relative bg-white p-1 rounded-lg shadow-lg w-2/3 w-auto max-w-full max-h-[90vh] overflow-auto">
                             <button
                                 onClick={closeModal}
-                                className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-[25px] h-[25px] flex items-center justify-center"
+                                className="absolute top-2 right-2 bg-red-500 text-white rounded-md w-auto px-2 py-1 flex items-center justify-center"
                             >
-                                &times;
+                                <div>
+                                    {spacedText("lukk")}
+                                </div>
                             </button>
                             <div className="flex justify-center">
                                 <Image
