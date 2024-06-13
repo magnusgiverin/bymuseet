@@ -18,8 +18,6 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [imageDimensions, setImageDimensions] = useState<{ width: number; height: number } | null>(null);
 
-    const galleryRef = useRef<HTMLDivElement>(null);
-
     const openModal = (image: string) => {
         const img = new window.Image();
         img.onload = () => {
@@ -146,6 +144,34 @@ export default function Lokalitet() {
                             />
                         </div>
                     </div>
+                    {/* Render Information Boxes */}
+                    {location.info1 && (
+                        <div className='flex flex-col md:flex-row gap-10'>
+                            {(location.addressse || location.byggår || location.fredet || location.stilart) && (
+                                <div className='w-1/4 bg-white md:rounded-md p-8 mt-10'>
+                                    {Object.entries(location)
+                                        .filter(([key, value]) => (['addresse', 'byggår', 'fredet', 'stilart']).includes(key))
+                                        .map(([key, value]) => (
+                                            <span key={key} className='flex flex-col pt-4'>
+                                                <p className='font-bold text-green-800'>{spacedText(key) + ": "}</p>
+                                                <p>{value}</p>
+                                            </span>
+                                        ))}
+                                </div>
+                            )}
+                            <div className={`mt-10 bg-white rounded-0 md:rounded-md p-8 ${location.addressse || location.byggår || location.fredet || location.stilart ? 'w-3/4' : 'w-full'}`}>
+                                <SubTitle text='informasjon' />
+                                <div className="flex flex-col gap-4">
+                                    {Object.entries(location)
+                                        .filter(([key, value]) => key.includes("info"))
+                                        .map(([key, value]) => (
+                                            <p key={key}>{value}</p>
+                                        ))}
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
                     <Gallery images={images} location={location} />
                 </>
             ) : (
