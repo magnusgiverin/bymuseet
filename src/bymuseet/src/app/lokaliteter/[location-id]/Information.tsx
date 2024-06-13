@@ -16,7 +16,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
                             {Object.entries(location)
                                 .filter(([key, value]) => (['adresse', 'byggår', 'fredet', 'stilart']).includes(key))
                                 .map(([key, value]) => (
-                                    <span key={key} className='flex flex-col pt-4'>
+                                    <span key={key} className='flex flex-col pb-4'>
                                         <p className='font-bold text-green-800'>{spacedText(key) + ": "}</p>
                                         <p>{value}</p>
                                     </span>
