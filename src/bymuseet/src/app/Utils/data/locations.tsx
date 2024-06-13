@@ -1,5 +1,13 @@
-// data/locations.js
-const locations = [
+
+export interface Location {
+  id: string;
+  name: string;
+  image: string;
+  dir: string;
+  description: string;
+}
+
+const locations: Location[] = [
     {
       id: 'brusve-gard',
       name: 'Brusve Gård',
