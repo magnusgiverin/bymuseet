@@ -99,7 +99,7 @@ const Lokaliteter = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
         {locations.map((location) => (
           <div key={location.id} className="flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105">
-            <Link className="shadow-md rounded-md relative lg:w-96 lg:h-48 sm:w-64 sm:h-32 w-[330px] w-full h-48 overflow-hidden cursor-pointer" href={`/lokaliteter/${location.id}`}>
+            <Link className="shadow-md rounded-md relative lg:w-96 lg:h-48 sm:w-64 sm:h-32 w-[330px] h-48 overflow-hidden cursor-pointer" href={`/lokaliteter/${location.id}`}>
               <Image
                 src={location.image}
                 alt={location.name}
