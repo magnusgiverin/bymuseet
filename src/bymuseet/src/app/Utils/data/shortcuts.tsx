@@ -31,7 +31,6 @@ const shortcuts: ShortcutLink[] = [
     {
         header: 'Om',
         url: '/om',
-        icon: <Icons name={"Utleie"}/>
     },
 ]
 
