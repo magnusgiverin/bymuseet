@@ -5,7 +5,7 @@ import formålBilde from "../../../public/images/pynt/pynt-1.jpg";
 
 const Formål = () => {
     return (
-      <div className="flex flex-col md:flex-row w-full">
+      <div className="flex flex-col md:flex-row w-full mb-10">
         <div className="bg-white py-8 px-4 md:p-8 md:rounded-s-md shadow-md lg:w-2/3 w-full">
           <SubTitle text="formål" />
           <p className="mb-4">Bymuseet i Levanger er en medlemsorganisasjon med formålet å samle, bevare, forske i og formidle kulturhistorisk materiale i og omkring Levanger Sentrum, med spesiell vekt på følgende områder:</p>

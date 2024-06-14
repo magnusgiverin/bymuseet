@@ -5,7 +5,7 @@ import omBilde from "../../../public/images/pynt/pynt-2.jpg";
 
 const Om = () => {
     return (
-        <div className="w-full flex flex-col md:flex-row">
+        <div className="w-full flex flex-col md:flex-row mb-10">
             <div className="md:rounded-s-md md:h-auto h-60 lg:w-1/3 w-full relative shadow-md">
                 <Image
                     src={omBilde}
