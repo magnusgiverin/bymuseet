@@ -24,8 +24,8 @@ const Velkommen = () => {
             </div>
 
             <div className="lg:hidden my-8 flex flex-col items-center gap-2 w-full">
-                <h1 className="text-lg text-green-800 font-bold text-center">{spacedText(velkommen.title)}</h1>
-                <p className="text-md whitespace-pre-wrap">{spacedText(velkommen.subtitle)}</p>
+                <h1 className="text-base text-green-800 font-bold text-center">{spacedText(velkommen.title)}</h1>
+                <p className="text-sm whitespace-pre-wrap">{spacedText(velkommen.subtitle)}</p>
             </div>
         </>
     );
