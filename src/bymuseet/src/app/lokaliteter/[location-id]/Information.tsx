@@ -23,7 +23,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
                         </div>
                     )}
                     <div className={`shadow-md bg-white rounded-0 md:rounded-md w-full p-8 ${location.facts ? 'lg:w-3/4' : ''}`}>
-                        <SubTitle text='informasjon' shortText='info' />
+                        <SubTitle text='informasjon'/>
                         <div className="flex flex-col gap-4">
                             {Object.entries(location.info)
                                 .map(([key, value]) => (

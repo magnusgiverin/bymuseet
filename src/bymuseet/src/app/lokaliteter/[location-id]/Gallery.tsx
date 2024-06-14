@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from 'next/image';
 import { Location } from '@/app/Utils/data/locations';
 import { spacedText } from "@/app/Utils/spacedText";
+import Button from "@/app/Components/Button";
 
 interface GalleryProps {
     images: string[];
@@ -13,6 +14,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [imageDimensions, setImageDimensions] = useState<{ width: number; height: number } | null>(null);
+    const [showMore, setShowMore] = useState(false);
 
     const openModal = (image: string) => {
         const img = new window.Image();
@@ -27,6 +29,10 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
     const closeModal = () => {
         setSelectedImage(null);
         setIsOpen(false);
+    };
+
+    const toggleShowMore = () => {
+        setShowMore(prevShowMore => !prevShowMore);
     };
 
     return (
@@ -79,7 +85,6 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
                         </div>
                     </div>
                 </div>
-
             )}
         </>
     );

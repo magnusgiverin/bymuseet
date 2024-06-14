@@ -99,8 +99,8 @@ const locations: Location[] = [
   {
     id: 'skolemuseet',
     name: 'Skolemuseet',
-    image: '/images/hveding-auto/hveding-auto-main.jpg',
-    dir: '/images/hveding-auto/',
+    image: '/images/skolemuseet/skolemuseet-main.jpg',
+    dir: '/images/skolemuseet/',
     description: 'Levanger skole var en av fylkets faste skole med oppstart før 1803. Til tomta Kirkegata 11 kom skolen i 1878 - først med forsettelsen av byens brgerskole, og deretter med klassene fra folkeskolen.\n\nFra 1892 var skolen øvingslokale for lærerskolen på Levanger - og i mange år den eneste. Det er tatt vare på store mengder undervisningsmateriell opp gjennom årene og i 1985 ble det systematisk registrert og plassert i et klasserom i det såkalte Middelskolebygget fra 1878.\n\nRommet er aldri gjort om - det er møblert med trepulter fra ca 1900 og inneholder gjenstander det knapt finnes make til i Trøndelag. I dette klasserommet får man et godt innblikk i hvordan en byskole ble drevet for 100 år siden. Inkludert gjenstander fra Røstad Skole har museet 4000 gjenstander.',
   },
 ];
