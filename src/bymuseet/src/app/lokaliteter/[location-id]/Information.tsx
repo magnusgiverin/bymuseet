@@ -35,7 +35,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
             ) : (
                 <>
                     {location.facts && (
-                        <div className='shadow-md w-full bg-white md:rounded-md p-8'>
+                        <div className='flex flex-col shadow-md w-full bg-white md:rounded-md p-8 gap-y-4'>
                             {Object.entries(location.facts)
                                 .map(([key, value]) => (
                                     <span key={key} className='flex flex-col'>

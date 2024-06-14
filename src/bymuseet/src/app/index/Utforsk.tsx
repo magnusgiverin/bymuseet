@@ -15,7 +15,7 @@ const Utforsk: React.FC<UtforskProps> = ({ location }) => {
     return (
         <div className="w-full bg-white rounded-0 md:rounded-md p-8 ">
             {pathname === "/" ? (
-                <Title text='våre lokasjoner' shortText="lokasjoner" />
+                <Title text='våre lokaliteter' shortText="lokaliteter" />
             ) : (
                 <SubTitle text='utforsk videre'/>
             )}

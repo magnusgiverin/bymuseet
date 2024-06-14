@@ -91,7 +91,7 @@ const locations: Location[] = [
     name: 'Reinslyst',
     image: '/images/reinslyst-arbeiderbolig/reinslyst-arbeiderbolig-main.jpg',
     dir: '/images/reinslyst-arbeiderbolig/',
-    description: 'Dette er en gammel arbeiderbolig som opprinnelig lå i Gamle Kongevei, ca 200 m fra Brusve.\n\nHer lå ca 7-8 små hus på Brusves grunn, og beboerne var stort sett husmenn med arbeidsplikt på gården. Boligen visr hvordan folk i små kår bodde og virket, i stor kontrast til de høyere sosiale lags overdådige levesett.',
+    description: 'Dette er en gammel arbeiderbolig som opprinnelig lå i Gamle Kongevei, ca 200 m fra Brusve Gård.\n\nHer lå ca 7-8 små hus på Brusves grunn, og beboerne var stort sett husmenn med arbeidsplikt på gården. Boligen visr hvordan folk i små kår bodde og virket, i stor kontrast til de høyere sosiale lags overdådige levesett.',
     facts: {
       byggår: '1855'
     }
@@ -101,7 +101,17 @@ const locations: Location[] = [
     name: 'Skolemuseet',
     image: '/images/skolemuseet/skolemuseet-main.jpg',
     dir: '/images/skolemuseet/',
-    description: 'Levanger skole var en av fylkets faste skole med oppstart før 1803. Til tomta Kirkegata 11 kom skolen i 1878 - først med forsettelsen av byens brgerskole, og deretter med klassene fra folkeskolen.\n\nFra 1892 var skolen øvingslokale for lærerskolen på Levanger - og i mange år den eneste. Det er tatt vare på store mengder undervisningsmateriell opp gjennom årene og i 1985 ble det systematisk registrert og plassert i et klasserom i det såkalte Middelskolebygget fra 1878.\n\nRommet er aldri gjort om - det er møblert med trepulter fra ca 1900 og inneholder gjenstander det knapt finnes make til i Trøndelag. I dette klasserommet får man et godt innblikk i hvordan en byskole ble drevet for 100 år siden. Inkludert gjenstander fra Røstad Skole har museet 4000 gjenstander.',
+    description: 'Levanger skole var en av fylkets faste skole med oppstart før 1803. Til tomta Kirkegata 11 kom skolen i 1878 - først med forsettelsen av byens brgerskole, og deretter med klassene fra folkeskolen.\n\nFra 1892 var skolen øvingslokale for lærerskolen på Levanger - og i mange år den eneste. Det er tatt vare på store mengder undervisningsmateriell opp gjennom årene og i 1985 ble det systematisk registrert og plassert i et klasserom i det såkalte Middelskolebygget fra 1878. Rommet er aldri gjort om - det er møblert med trepulter fra ca 1900 og inneholder gjenstander det knapt finnes make til i Trøndelag. I dette klasserommet får man et godt innblikk i hvordan en byskole ble drevet for 100 år siden. Inkludert gjenstander fra Røstad Skole har museet 4000 gjenstander.',
+    info: {
+      info1: 'Det første faste skolebygget som ble tatt i bruk i Levanger var vakthuset ”Corps de Guarde” som lå på kirkehjørnet der kongevegen svingte østover mot Brusvebrua. Huset var bygd som innkvarteringsplass for vaktsoldater og befal som passet på under Levangermarkedet. Denne bygningen ble i 1878 oppført som ”Borger- eller Middelskole i Forening med Festivitetslokale, Kommunelokaler, Lærer- og Lærerindebekvemmeligheter…”. Festsalen var i 2. etasje. I 3. etasje var det en leilighet i hver ende, ”to Lærerindebekvemmeligheter”.',
+      info2: 'Middelskolen forandret seg og ble etter hvert til realskole og gymnas. Fra 1892 var Middelskolebygget øvingsskole for lærerskolen. Byens bibliotek var i Middelskolebygget fra 1925 til etter 2. verdenskrig. Det ble også i mange år drevet teknisk aftenskole i bygget. Førskolelærerlinja ved lærerskolen var i Middeskolebygget fra 1976 til på 1980-tallet.',
+      info3: 'I dag benytter Bymuseet i Levanger 2. etasje som skolemuseum. Levanger kunstforening har tilholdssted i 1.etasje. Bygget rommer store lager av pedagogiske ”ting” helt tilbake til 1890-åra. Bygningen er et av få bygninger i Levanger sentrum som ”overlevde” siste store bybrann i 1897. Bygningen har høy grad av autentisitet. Originalt panel og mot sundet også en del originale vinduer med original omramming bevart. Nye vinduer mot Kirkegata. Bortsett fra noen mindre fasadeendringen er det gjort lite med bygget siden det ble bygd i 1878.',
+    },
+    facts: {
+      byggår: '1878',
+      adresse: 'Kirkegata 11',
+      stilart: 'Representerer overgangen mellom sen Empire og Sveitserstil'
+    }
   },
 ];
 
