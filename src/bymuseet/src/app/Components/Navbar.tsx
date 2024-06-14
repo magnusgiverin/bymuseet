@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className='p-2 fixed sm:sticky sm:top-0 bottom-0 sm:bottom-auto z-50 font-semibold w-full bg-white backdrop-blur-2xl'>
       <div className="flex justify-center">
       <div className="xs:hidden flex flex-row w-full sm:w-auto justify-between sm:justify-between sm:items-center">
-          {shortcuts.map((shortcut, index) => {
+          {shortcuts.filter((shortcut) => ["hjem", "utleie", "arrangementer", "formidling"].includes(shortcut.header.toLowerCase())).map((shortcut, index) => {
             const isActive = pathname === shortcut.url;
             return (
               <a
