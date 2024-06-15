@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from 'next/image';
 import { Location } from '@/app/Utils/data/locations';
 import { spacedText } from "@/app/Utils/spacedText";
-import Button from "@/app/Components/Button";
 
 interface GalleryProps {
     images: string[];
@@ -33,7 +32,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
     return (
         <>
             {images.length !== 0 && (
-                <div className="my-10 bg-white rounded-0 md:rounded-md md:p-8 py-8 px-4">
+                <div className="w-full mb-10 bg-white rounded-0 md:rounded-md md:p-8 py-8 px-4">
                     <SubTitle text="album" />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {images.map((image, index) => (
