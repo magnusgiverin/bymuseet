@@ -9,7 +9,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className='sm:p-2 fixed sticky top-0 bottom-auto z-50 font-semibold w-full bg-green-800 sm:bg-white backdrop-blur-2xl'>
+    <nav className='sm:p-2 fixed sticky top-0 bottom-auto z-50 font-semibold w-full bg-green-800 sm:bg-white shadow-xl'>
       <div className="flex justify-center">
         <div className="hidden sm:block sm:flex flex-row w-full sm:w-auto justify-between sm:justify-between sm:items-center">
           {shortcuts.filter((shortcut) => ["hjem", "utleie", "arrangementer", "formidling"].includes(shortcut.header.toLowerCase())).map((shortcut, index) => {
@@ -27,7 +27,7 @@ const Navbar = () => {
             );
           })}
         </div>
-        <div className='py-2 my-5 w-full sm:hidden flex flex-row items-center justify-center relative text-white'>
+        <div className='my-5 w-full sm:hidden flex flex-row items-center justify-center relative text-white'>
             <div className='absolute left-0 px-4'>
               <p className='whitespace-pre-wrap text-sm'>{spacedText("bymuseet i levanger")}</p>
             </div>

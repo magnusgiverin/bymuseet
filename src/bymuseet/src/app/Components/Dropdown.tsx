@@ -46,7 +46,7 @@ const Dropdown = () => {
                 </button>
                 {/* Dropdown content */}
                 {isOpen && (
-                    <div className='absolute right-0 mt-11 w-screen bg-white shadow-black shadow-2xl backdrop-blur-2xl z-30'>
+                    <div className='absolute right-0 mt-9 w-screen bg-white z-30'>
                         {shortcuts.map((shortcut, index) => (
                             <a
                                 key={index}
