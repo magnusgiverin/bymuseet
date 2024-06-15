@@ -24,7 +24,7 @@ const Footer = () => {
             <p className="mt-4">Bymuseet i Levanger © {year}</p>
           </div>
 
-          <div className="w-full md:w-1/2 flex flex-col mb-10">
+          <div className="w-full md:w-1/2 flex flex-col">
             <p className="font-bold">Sider:</p>
             {shortcuts.map((link) => (
               <Link
