@@ -15,7 +15,7 @@ const Introduction: React.FC<IntroductionProps> = ({ location }) => {
                 <p className="whitespace-pre-wrap">{location.description}</p>
                 <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' />
             </div>
-            <div className="lg:h-auto h-60 lg:w-1/3  xl:w-2/5 w-full relative shadow-md">
+            <div className="lg:h-auto h-60 lg:w-1/3 xl:w-2/5 w-full relative shadow-md">
                 <Image
                     src={location.image}
                     alt="Fasade Levanger"

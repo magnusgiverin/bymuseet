@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <main className="px-2 flex w-full flex-col items-center min-h-screen">
-          <div className="md:w-4/5 w-full">
+          <div className="md:w-3/4 w-full">
               {children}
           </div>
         </main>

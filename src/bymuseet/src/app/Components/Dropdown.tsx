@@ -1,7 +1,9 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import ReactDOM from 'react-dom';
 import Icons from '../Utils/Icons';
-import Shortcuts from '../Utils/data/shortcuts';
+import { spacedText } from '../Utils/spacedText';
+import shortcuts from '../Utils/data/shortcuts';
 
 const Dropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,26 +33,34 @@ const Dropdown = () => {
     }, []); // Empty dependency array to run this effect only once
 
     return (
-        <div className="ml-auto top-0 py-2 px-4 relative group text-white flex items-center" ref={dropdownRef}>
-            <button onClick={toggleDropdown}>
-                {isOpen ?
-                    <Icons name="Cross" /> : <Icons name="Dropdown" />
-                }
-            </button>
-            {/* Dropdown content */}
-            <div className={`absolute right-0 mt-10 w-48 bg-gray-500 rounded-2xl shadow-black shadow-2xl backdrop-blur-2xl ${isOpen ? 'block' : 'hidden'}`}>
-                {Shortcuts.map((shortcut, index) => (
-                    <a
-                        key={index}
-                        href={shortcut.url}
-                        className={`block px-4 py-2 text-sm text-white flex flex-row gap-4 hover:bg-blue-500 hover:text-white ${index === 0 ? 'rounded-t-2xl' : ''} ${index === Shortcuts.length - 1  ? 'rounded-b-2xl' : ''}`}
-                    >   
-                        {shortcut.icon}
-                        <h3>{shortcut.header}</h3>
-                    </a>
-                ))}
+        <>
+            {isOpen && ReactDOM.createPortal(
+                <div className="fixed inset-0 bg-black bg-opacity-75 z-10"></div>,
+                document.body
+            )}
+            <div className="px-4 top-0 relative group text-white flex z-20" ref={dropdownRef}>
+                <button onClick={toggleDropdown}>
+                    {isOpen ?
+                        <Icons name="Cross" /> : <Icons name="Dropdown" />
+                    }
+                </button>
+                {/* Dropdown content */}
+                {isOpen && (
+                    <div className='absolute right-0 mt-11 w-screen bg-white shadow-black shadow-2xl backdrop-blur-2xl z-30'>
+                        {shortcuts.map((shortcut, index) => (
+                            <a
+                                key={index}
+                                href={shortcut.url}
+                                className='block px-4 py-2 text-sm text-black flex flex-row gap-4 hover:text-green-800'
+                            >   
+                                <h3 className='flex items-center'>{spacedText(shortcut.header)}</h3>
+                                <Icons name='ArrowRight_sm'/>
+                            </a>
+                        ))}
+                    </div>
+                )}
             </div>
-        </div>
+        </>
     );
 };
 

@@ -59,15 +59,8 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
                 <div className="hidden md:block">
                     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
                         <div className="m-20 relative bg-white p-1 rounded-lg shadow-lg w-2/3 w-auto max-w-full max-h-[90vh] overflow-auto">
-                            <button
-                                onClick={closeModal}
-                                className="absolute top-2 right-2 bg-red-500 text-white rounded-md w-auto px-2 py-1 flex items-center justify-center"
-                            >
-                                <div>
-                                    {spacedText("lukk")}
-                                </div>
-                            </button>
-                            <div className="flex justify-center">
+
+                            <div className="flex justify-center z-0">
                                 <Image
                                     src={selectedImage}
                                     alt="Selected Image"
@@ -75,6 +68,14 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
                                     height={imageDimensions.height}
                                     className="rounded-lg"
                                 />
+                                <button
+                                    onClick={closeModal}
+                                    className="absolute top-2 right-2 bg-red-500 z-50 text-white rounded-md w-auto px-2 py-1 flex items-center justify-center"
+                                >
+                                    <div>
+                                        {spacedText("lukk")}
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
