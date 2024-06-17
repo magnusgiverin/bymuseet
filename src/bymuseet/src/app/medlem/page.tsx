@@ -4,8 +4,8 @@ import { Title } from "../Components/Title";
 
 export default function Medlem() {
     return (
-        <main className="flex flex-col lg:flex-row gap-5 md:gap-10 w-full my-5 md:my-10">
-            <div className="w-full lg:w-2/3 h-auto bg-white p-8 md:rounded-md flex flex-col py-8 px-4">
+        <main className="h-auto flex flex-col lg:flex-row gap-5 md:gap-10 w-full my-5 md:my-10">
+            <div className="w-full lg:w-2/3 h-auto bg-white p-8 md:rounded-md flex flex-col py-8 px-4 md:p-8">
                 <span className="w-full">
                     <Title text="Takk for din interesse" shortText="takk" />
                 </span>
@@ -14,7 +14,7 @@ export default function Medlem() {
                     <Button icon={"ArrowLeft_sm"} text={"tilbake"} iconPosition="left" />
                 </div>
             </div>
-            <div className="w-full lg:w-1/3 bg-white py-8 px-4 md:rounded-md flex flex-col items-center">
+            <div className="w-full lg:w-1/3 bg-white py-8 px-4 md:p-8 md:rounded-md flex flex-col items-center">
                 <div className="w-full flex flex-col items-center justify-center text-center">
                     <p className="font-bold">Medlem: 300 kr pr år</p>
                     <p className="font-bold">Bedrift: 700 kr pr år</p>

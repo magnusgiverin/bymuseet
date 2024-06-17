@@ -12,7 +12,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
             {location.info ? (
                 <div className='flex flex-col lg:flex-row gap-5 md:gap-10 mb-5 md:mb-10'>
                     {location.facts && (
-                        <div className='flex flex-col shadow-md w-full lg:w-1/4 bg-white md:rounded-md p-8 gap-y-4'>
+                        <div className='flex flex-col shadow-md w-full lg:w-1/4 bg-white md:rounded-md py-8 px-4 md:p-8 gap-y-4'>
                             {Object.entries(location.facts)
                                 .map(([key, value]) => (
                                     <span key={key} className='flex flex-col'>
@@ -22,7 +22,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
                                 ))}
                         </div>
                     )}
-                    <div className={`shadow-md bg-white rounded-0 md:rounded-md w-full p-8 ${location.facts ? 'lg:w-3/4' : ''}`}>
+                    <div className={`shadow-md bg-white rounded-0 md:rounded-md w-full py-8 px-4 md:p-8 ${location.facts ? 'lg:w-3/4' : ''}`}>
                         <SubTitle text='informasjon'/>
                         <div className="flex flex-col gap-4">
                             {Object.entries(location.info)
@@ -35,7 +35,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
             ) : (
                 <>
                     {location.facts && (
-                        <div className='flex flex-col shadow-md w-full mb-5 md:mb-10 bg-white md:rounded-md p-8 gap-y-4'>
+                        <div className='flex flex-col shadow-md w-full mb-5 md:mb-10 bg-white md:rounded-md py-8 px-4 md:p-8 gap-y-4'>
                             {Object.entries(location.facts)
                                 .map(([key, value]) => (
                                     <span key={key} className='flex flex-col'>
