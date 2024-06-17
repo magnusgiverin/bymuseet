@@ -16,7 +16,7 @@ export default function Medlem() {
             </div>
             <div className="w-full lg:w-1/3 bg-white py-8 px-4 md:rounded-md flex flex-col items-center">
                 <div className="w-full flex flex-col items-center justify-center text-center">
-                    <p className="mt-4 font-bold">Medlem: 300 kr pr år</p>
+                    <p className="font-bold">Medlem: 300 kr pr år</p>
                     <p className="font-bold">Bedrift: 700 kr pr år</p>
                     <p className="mt-4 font-bold">VIPPS til 506171 eller betal til konto 4420.06.97283</p>
                     <p>HUSK skriv navn og epostadresse</p>
