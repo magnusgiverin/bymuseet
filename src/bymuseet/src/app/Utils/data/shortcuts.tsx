@@ -33,6 +33,10 @@ const shortcuts: ShortcutLink[] = [
         url: '/om',
         icon: <Icons name={"Om"}/>
     },
+    {
+        header: 'Bli medlem',
+        url: '/medlem',
+    },
 ]
 
 export default shortcuts;

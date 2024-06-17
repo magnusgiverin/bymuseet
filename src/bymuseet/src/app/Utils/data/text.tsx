@@ -31,7 +31,7 @@ export const textContent = {
     },
     medlem: {
         title: "takk for din interesse",
-        shortTitle: "takk",
+        shortTitle: "takk for interessen",
         paragraph1: "Bymuseet drives på frivillig basis og uten faste tilskudd til drift og vedlikehold. Det kreves årlig betydelige beløp til vedlikehold av de verneverdige bygningene. Dessuten er det nødvendig med midler for å kunne drive museumsarbeid i form av utstillinger og ulike arrangementer gjennom hele året. Gjennom din støtte til Bymuseet er du/dere med å bevare hus og sikre opplevelser som del av kulturarvmiljøet i Levanger.",
         memberPrice: "Medlem: 300 kr pr år",
         businessPrice: "Bedrift: 700 kr pr år",

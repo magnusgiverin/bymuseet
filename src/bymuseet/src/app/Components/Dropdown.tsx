@@ -53,7 +53,7 @@ const Dropdown = () => {
                                 href={shortcut.url}
                                 className='block px-4 py-2 text-sm text-black flex flex-row gap-4 hover:text-green-800'
                             >   
-                                <h3 className='flex items-center'>{spacedText(shortcut.header)}</h3>
+                                <h3 className='flex whitespace-pre-wrap items-center'>{shortcut.header.toUpperCase()}</h3>
                                 <Icons name='ArrowRight_sm'/>
                             </a>
                         ))}
