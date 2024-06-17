@@ -1,5 +1,6 @@
 'use client';
 import Button from "../Components/Button";
+import IkkeFerdig from "../Components/IkkeFerdig";
 import { Title } from "../Components/Title";
 
 export default function Om() {
@@ -8,7 +9,7 @@ export default function Om() {
             <span className="w-full">
             <Title text="Om"/>
             </span>
-            <Button icon={"ArrowLeft_sm"} text={"tilbake"} iconPosition="left"/>
+            <IkkeFerdig />
         </main>
     );
 }

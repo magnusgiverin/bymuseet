@@ -1,4 +1,5 @@
 import Button from "../Components/Button";
+import IkkeFerdig from "../Components/IkkeFerdig";
 import { Title } from "../Components/Title";
 
 export default function Arrangementer() {
@@ -7,7 +8,7 @@ export default function Arrangementer() {
       <span className="w-full">
         <Title text="Arrangementer" shortText="hva skjer?"/>
       </span>
-      <Button icon={"ArrowLeft_sm"} text={"tilbake"} iconPosition="left" />
+      <IkkeFerdig />
     </main>
   );
 }

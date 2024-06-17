@@ -1,5 +1,6 @@
 'use client';
 import Button from "../Components/Button";
+import IkkeFerdig from "../Components/IkkeFerdig";
 import { Title } from "../Components/Title";
 
 export default function Utleie() {
@@ -8,7 +9,7 @@ export default function Utleie() {
             <span className="w-full">
             <Title text="Utleie"/>
             </span>
-            <Button icon={"ArrowLeft_sm"} text={"tilbake"} iconPosition="left"/>
+            <IkkeFerdig />
         </main>
     );
 }
