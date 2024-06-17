@@ -1,5 +1,4 @@
-import Button from "../Components/Button";
-import IkkeFerdig from "../Components/IkkeFerdig";
+import NotDone from "../Components/NotDone";
 import { Title } from "../Components/Title";
 
 export default function Arrangementer() {
@@ -8,7 +7,7 @@ export default function Arrangementer() {
       <span className="w-full">
         <Title text="Arrangementer" shortText="hva skjer?"/>
       </span>
-      <IkkeFerdig />
+      <NotDone />
     </main>
   );
 }

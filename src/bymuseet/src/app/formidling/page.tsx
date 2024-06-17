@@ -54,8 +54,7 @@
 // }
 
 'use client';
-import Button from "../Components/Button";
-import IkkeFerdig from "../Components/IkkeFerdig";
+import NotDone from "../Components/NotDone";
 import { Title } from "../Components/Title";
 
 export default function Formidling() {
@@ -64,7 +63,7 @@ export default function Formidling() {
             <span className="w-full">
             <Title text="Formidlig"/>
             </span>
-            <IkkeFerdig />
+            <NotDone />
         </main>
     );
 }

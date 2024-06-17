@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { SubTitle } from "./Title";
 
-const IkkeFerdig = () => {
+const NotDone = () => {
     return (
         <div className="flex flex-col items-center p-10 my-10 w-full bg-white rounded-md shadow-md">
             <SubTitle text="Denne siden er ikke ferdig" shortText="jobber med saken..." />
@@ -22,4 +22,4 @@ const IkkeFerdig = () => {
     );
 };
 
-export default IkkeFerdig;
+export default NotDone;

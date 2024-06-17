@@ -1,6 +1,5 @@
 'use client';
-import Button from "../Components/Button";
-import IkkeFerdig from "../Components/IkkeFerdig";
+import NotDone from "../Components/NotDone";
 import { Title } from "../Components/Title";
 
 export default function Utleie() {
@@ -9,7 +8,7 @@ export default function Utleie() {
             <span className="w-full">
             <Title text="Utleie"/>
             </span>
-            <IkkeFerdig />
+            <NotDone />
         </main>
     );
 }
