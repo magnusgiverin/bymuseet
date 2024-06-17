@@ -7,7 +7,7 @@ import { textContent } from "../Utils/data/text";
 const Formål = () => {
     const { formål } = textContent;
     return (
-        <div className="flex flex-col lg:flex-row w-full mb-10 lg:mt-10">
+        <div className="flex flex-col lg:flex-row w-full mb-5 md:mb-10 lg:mt-10">
             <div className="bg-white py-8 px-4 md:p-8 md:rounded-s-md shadow-md lg:w-2/3 xl:w-3/5 w-full">
                 <SubTitle text={formål.title} />
                 <p className="mb-4">{formål.paragraph1}</p>

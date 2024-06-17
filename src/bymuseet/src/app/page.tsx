@@ -7,7 +7,7 @@ import Velkommen from "./index/Velkommen";
 
 const Home = () => {
   return (
-    <main className="flex flex-col items-center justify-between mb-10">
+    <main className="flex flex-col items-center justify-between mb-5 md:mb-10">
       <Velkommen />
       <Formål />
       <Om />

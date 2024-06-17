@@ -46,7 +46,7 @@ export default function Lokalitet() {
     }, [location]);
 
     return (
-        <main className='mb-10 flex flex-col items-center'>
+        <main className='mb-5 md:mb-10 flex flex-col items-center'>
             {location ? (
                 <>
                     <Introduction location={location}/>

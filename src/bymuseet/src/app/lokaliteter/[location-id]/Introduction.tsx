@@ -9,7 +9,7 @@ interface IntroductionProps {
 
 const Introduction: React.FC<IntroductionProps> = ({ location }) => {
     return (
-        <div className="w-full flex flex-col lg:flex-row my-10">
+        <div className="w-full flex flex-col lg:flex-row my-5 md:my-10">
             <div className="bg-white py-8 px-4 md:p-8 shadow-md lg:w-2/3 xl:w-3/5 w-full md:rounded-s-md">
                 <Title text={location.name} />
                 <p className="whitespace-pre-wrap">{location.description}</p>

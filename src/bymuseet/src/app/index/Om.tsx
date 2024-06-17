@@ -7,7 +7,7 @@ import { textContent } from "../Utils/data/text";
 const Om = () => {
     const { om } = textContent;
     return (
-        <div className="w-full flex flex-col lg:flex-row mb-10">
+        <div className="w-full flex flex-col lg:flex-row mb-5 md:mb-10">
             <div className="md:rounded-s-md lg:h-auto h-60 lg:w-1/3 xl:w-2/5 w-full relative shadow-md">
                 <Image
                     src={omBilde}
