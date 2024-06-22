@@ -8,19 +8,23 @@ interface ButtonProps {
     text: string;
     link?: string;
     iconPosition?: 'left' | 'right';
-    onClick?: () => void; // Add the onClick prop
+    onClick?: () => void;
+    target?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ icon, text, link = "/", iconPosition = 'right', onClick }) => {
+const Button: React.FC<ButtonProps> = ({ icon, text, link = "/", iconPosition = 'right', onClick, target }) => {
     const router = useRouter();
     const spacedText = text.toUpperCase().split('').join(' ');
 
     const handleClick = () => {
         if (onClick) {
             onClick();
-
         } else {
-            router.push(link);
+            if (target === '_blank') {
+                window.open(link, '_blank');
+            } else {
+                router.push(link);
+            }
         }
     };
 

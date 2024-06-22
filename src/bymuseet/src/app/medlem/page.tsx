@@ -25,7 +25,7 @@ export default function Medlem() {
                     <p>{medlem.reminder}</p>
                     <p className="mt-4 font-bold">{medlem.thankYou}</p>
                     <p>{medlem.information}</p>
-                    <p className="mt-4 text-blue-500">
+                    <p className="mt-4 text-blue-600 underline">
                         <a href={"mailto:" + medlem.emailAddress}>{medlem.emailAddress}</a>
                     </p>
                 </div>

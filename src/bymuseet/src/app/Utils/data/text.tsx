@@ -3,7 +3,7 @@
 export const textContent = {
     formål: {
         title: "formål",
-        paragraph1: "Bymuseet i Levanger er en medlemsorganisasjon med formålet å samle, bevare, forske i og formidle kulturhistorisk materiale i og omkring Levanger Sentrum, med spesiell vekt på følgende områder:",
+        paragraph1: "Bymuseet i Levanger er en medlemsorganisasjon med formålet å samle, bevare, forske i og formidle kulturhistorisk materiale i og omkring Levanger sentrum, med spesiell vekt på følgende områder:",
         list1: [
             "Embedsmannskultur og arbeiderkultur, sosial- og kvinnehistorie",
             "Handels-, martnas- og byhistorie",
@@ -41,6 +41,60 @@ export const textContent = {
         information: "For å få mer informasjon, kontakt oss på:",
         emailAddress: "bymuseetilevanger@gmail.com",
         buttonText: "tilbake",
-
+    },
+    tilbud: {
+        title: "Våre tilbud",
+        description: "utleie, arrangement, og byvandring",
+    },    
+    byvandring: {
+        title: "byvandring",
+        info: {
+            introduction: "Våre egne profesjonelle guider tar dere med på byvandring i Trehusbyen Levanger som i 2018 ble fredet som kulturmiljø. Vi forteller om byens historie og ser nærmere på noen av bygningene.",
+            details: "Vi lager gjerne et opplegg tilpasset ulike grupper. Ruta blir lagt opp slik at den passer for både gående og rullende. Om noen har spesielle behov, si fra i påmeldinga slik at vi kan ta hensyn på best mulig måte. Vi avslutter byvandringa der vi startet og kan ordne med enkel servering.",
+            time: "Tidsbruk: 1–2 timer.",
+            contact: "Kontakt oss for priser og bestilling: ",
+            contactMail: "bymuseetilevanger@gmail.com",
+            contactPerson: "Kontaktperson: Ketil Vidar Iversen, tlf. ",
+            contactPhone: "+47 905 04 996",
+            prices: "Priser 2024: Kr. 1500 uansett antall deltakere opp til 15 personer. Deretter kr. 100 per person over 15 personer.",
+        },
+        additional: {
+            title: "Se også",
+            links: [
+                { buttonText: "Digital Levangertur", link: "https://www.opplevinnherred.no/levanger/digital-tur-levanger/" },
+                { buttonText: "Levanger som fredet by", link: "https://riksantikvaren.no/kulturhistorie/levanger-ein-historisk-og-levande-by/" },
+                { buttonText: "Den kulturelle skolesekken", link: "https://www.denkulturelleskolesekken.no/trondelag/" }
+            ]
+        }
+    },
+    utleie: {
+        title: "Utleie",
+        options: [
+            {
+                title: "Brusve gård",
+                details: "Brusve gård egner seg til møter, familieselskaper, konfirmasjoner o.a. for grupper på inntil 35 personer.",
+                linkText: "Priser og kontaktinfo her",
+                link: "https://levafro.no/leie-brusve-gard/"
+            },
+            {
+                title: "Dampskipsbrygga",
+                details: "Egner seg til møter og selskaper (f.eks. bryllup) for grupper på inntil 95 personer.",
+                contact: "Kontakt oss for priser og bestilling:",
+                email: "bymuseetilevanger@gmail.com"
+            }
+        ]
+    },
+    arrangement: {
+        title: "Arrangement",
+        description: `Gjennom året arrangerer vi museumskafé ukentlig, konserter, foredrag, julearrangement o.a. på Brusve gård, Dampskipsbrygga og/eller Emilies hus.
+                Se fortløpende info om alle arrangementer på vår Facebook-side.`,
+        facebookLink: "https://www.facebook.com/bymuseetilevanger",
+        events: [
+            "Kulturuka i juni (uke 23)",
+            "Bakgårdsfestivalen",
+            "Marsimartnan",
+            "Levangermartnan"
+        ],
+        moreInfoLink: "https://www.levanger.kommune.no/tjenester/kultur-idrett-og-fritid/kommunens-arlige-arrangementer/"
     }
 };

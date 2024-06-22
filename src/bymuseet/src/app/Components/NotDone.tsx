@@ -10,7 +10,7 @@ const NotDone = () => {
                 <p>Takk for din interesse i Bymuseet i Levanger.</p>
                 <div className="flex flex-col md:flex-row items-center gap-2">
                     <p>For mer informasjon, ta kontakt med oss på</p>
-                    <a href="mailto:bymuseetilevanger@gmail.com" className="text-blue-500 hover:underline">
+                    <a href="mailto:bymuseetilevanger@gmail.com" className="text-blue-600 hover:underline">
                         bymuseetilevanger@gmail.com
                     </a>
                 </div>

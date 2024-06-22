@@ -14,28 +14,19 @@ const shortcuts: ShortcutLink[] = [
         icon: <Icons name={"Hjem"}/>
     },
     {
-        header: 'Formidling',
-        url: '/formidling',
-        icon: <Icons name={"Formidling"}/>
-    },
-    {
-        header: 'Arrangementer',
-        url: '/arrangementer',
-        icon: <Icons name={"Arrangementer"}/>
-    },
-    {
-        header: 'Utleie',
-        url: '/utleie',
-        icon: <Icons name={"Utleie"}/>
-    },
-    {
-        header: 'Om',
+        header: 'Om oss',
         url: '/om',
         icon: <Icons name={"Om"}/>
     },
     {
+        header: 'Våre tilbud',
+        url: '/tilbud',
+        icon: <Icons name={"Formidling"}/>
+    },
+    {
         header: 'Bli medlem',
         url: '/medlem',
+        icon: <Icons name={"Medlem"}/>
     },
 ]
 
