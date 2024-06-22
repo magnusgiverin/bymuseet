@@ -32,7 +32,7 @@ const Arrangement = () => {
                         ))}
                     </ul>
                 </div>
-                <a href={arrangement.moreInfoLink} target="_blank" className="text-blue-600 underline mt-2">
+                <a href={arrangement.moreInfoLink} target="_blank" className="text-blue-600 underline mt-6">
                     Mer om faste arrangement i Levanger her
                 </a>
 
