@@ -14,7 +14,7 @@ const Utleie = () => {
                 <SubTitle text={utleie.title} />
                 {utleie.options.map((option, index) => (
                     <div key={index} className="flex flex-col gap-2">
-                        <p className="font-bold text-green-800">{spacedText(option.title)}</p>
+                        <p className="font-bold text-green-800 whitespace-pre-wrap">{spacedText(option.title)}</p>
                         <p>{option.details}</p>
                         {option.link && (
                             <a href={option.link} target="_blank" rel="noopener noreferrer" className="mb-5 text-blue-600 underline">

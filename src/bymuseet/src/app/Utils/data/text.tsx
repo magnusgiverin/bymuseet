@@ -72,7 +72,7 @@ export const textContent = {
         options: [
             {
                 title: "Brusve gård",
-                details: "Brusve gård egner seg til møter, familieselskaper, konfirmasjoner o.a. for grupper på inntil 35 personer.",
+                details: "Brusve gård egner seg til ulike arrangementer som for eksempel møter, familieselskaper, konfirmasjoner for grupper på inntil 35 personer.",
                 linkText: "Priser og kontaktinfo her",
                 link: "https://levafro.no/leie-brusve-gard/"
             },
@@ -86,8 +86,8 @@ export const textContent = {
     },
     arrangement: {
         title: "Arrangement",
-        description: `Gjennom året arrangerer vi museumskafé ukentlig, konserter, foredrag, julearrangement o.a. på Brusve gård, Dampskipsbrygga og/eller Emilies hus.
-                Se fortløpende info om alle arrangementer på vår Facebook-side.`,
+        description: `Gjennom året arrangerer vi blant annet ukentlig museumskafé, konserter, foredrag og julearrangement på Brusve gård, Dampskipsbrygga og Emilies hus.
+                Se oppdatert informasjon om alle arrangementer på vår Facebook-side.`,
         facebookLink: "https://www.facebook.com/bymuseetilevanger",
         events: [
             "Kulturuka i juni (uke 23)",

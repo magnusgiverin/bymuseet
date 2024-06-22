@@ -25,7 +25,7 @@ const Arrangement = () => {
                     Facebook siden vår
                 </a>
                 <div className="flex flex-col gap-2 mt-6">
-                    <p className="font-bold text-green-800 whitespace-pre-wrap">{spacedText("Lokalene åpner under:")}</p>
+                    <p className="font-bold text-green-800 whitespace-pre-wrap">{spacedText("Lokalene er åpne under:")}</p>
                     <ul className="list-disc ml-4">
                         {arrangement.events.map((event, index) => (
                             <li key={index}>{event}</li>
