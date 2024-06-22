@@ -16,6 +16,7 @@ export interface Location {
     stilart?: string;
     fredet?: string;
   };
+  arrangementerDir?: string;
 }
 
 const locations: Location[] = [
@@ -35,7 +36,8 @@ const locations: Location[] = [
       adresse: 'Gimlevegen 3',
       stilart: 'Empire',
       fredet: 'Hovedbygningen ble fredet i 1923',
-    }
+    },
+    arrangementerDir: '/images/arrangement/brusve-gard/'
   },
   {
     id: 'dampskipsbrygga',
@@ -51,7 +53,8 @@ const locations: Location[] = [
     facts: {
       byggeår: '1897',
       adresse: 'Sjøgata 19B',
-    }
+    },
+    arrangementerDir: '/images/arrangement/dampskipsbrygga/'
   },
   {
     id: 'emilies-hus',

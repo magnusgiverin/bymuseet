@@ -35,7 +35,6 @@ const Arrangement = () => {
                 <a href={arrangement.moreInfoLink} target="_blank" className="text-blue-600 underline mt-6">
                     Mer om faste arrangement i Levanger her
                 </a>
-
             </div>
         </div>
     )
