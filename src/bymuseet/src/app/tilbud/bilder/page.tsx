@@ -72,19 +72,19 @@ const ArrangementBilder = () => {
 
     return (
         <main className="flex flex-col items-center justify-between my-5 md:my-10 w-full gap-5 md:gap-10">
-            {locationsWithImages.map(({ location, images }) => (
+            {locationsWithImages.map(({ location, images }, index) => (
                 <div key={location} className="w-full bg-white rounded-0 md:rounded-md md:p-8 py-8 px-4">
                     <Title text={`Bilder fra ${location}`} shortText={`${location}`} />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {images.map((image, index) => (
+                        {images.map((image, imgIndex) => (
                             <div
-                                key={index}
+                                key={imgIndex}
                                 className="shadow-md rounded-lg relative w-full h-64 cursor-pointer"
                                 onClick={() => openModal(image)}
                             >
                                 <Image
                                     src={image}
-                                    alt={`${location} ${index + 1}`}
+                                    alt={`${location} ${imgIndex + 1}`}
                                     layout="fill"
                                     objectFit="cover"
                                     className="rounded-lg"
@@ -93,10 +93,12 @@ const ArrangementBilder = () => {
                             </div>
                         ))}
                     </div>
-                    <Button icon={"ArrowLeft_sm"} text={"Tilbake"} iconPosition="left" link="/tilbud" />
+                    {index === locationsWithImages.length - 1 && (
+                        <Button icon={"ArrowLeft_sm"} text={"Tilbake"} iconPosition="left" link="/tilbud" />
+                    )}
                 </div>
             ))}
-             {isOpen && selectedImage && imageDimensions && (
+            {isOpen && selectedImage && imageDimensions && (
                 <div className="hidden md:block">
                     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
                         <div className="m-20 relative bg-white p-1 rounded-lg shadow-lg w-2/3 w-auto max-w-full max-h-[90vh] overflow-auto">
