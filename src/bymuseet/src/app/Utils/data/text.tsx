@@ -44,7 +44,7 @@ export const textContent = {
     },
     tilbud: {
         title: "Våre tilbud",
-        description: "utleie, arrangement, og byvandring",
+        description: "byvandring, utleie, og arrangement",
     },    
     byvandring: {
         title: "byvandring",
