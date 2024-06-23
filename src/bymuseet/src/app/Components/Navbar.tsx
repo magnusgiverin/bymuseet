@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className='sm:p-2 fixed sticky top-0 bottom-auto z-50 font-semibold w-full bg-green-800 sm:bg-white shadow-xl'>
       <div className="flex justify-center">
-        <div className="hidden sm:block sm:flex flex-row w-full sm:w-auto justify-between sm:justify-between sm:items-center">
+        <div className="hidden sm:block sm:flex flex-row w-full sm:w-auto justify-between sm:items-center">
           {shortcuts.map((shortcut, index) => {
             const isActive = pathname === shortcut.url;
             return (
