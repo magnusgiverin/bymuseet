@@ -10,7 +10,7 @@ export default function Medlem() {
 
     return (
         <main>
-            <div className="relative h-auto shadow-md gap-5 md:gap-10 w-full my-5 md:my-10">
+            <div className="hidden md:block relative h-auto shadow-md gap-5 md:gap-10 w-full my-5 md:my-10">
                 <Image
                     src={bannerBilde}
                     alt="Bilde bymuseet"
