@@ -16,13 +16,14 @@ export const textContent = {
             "Å samle og bevare gjenstander i autentiske miljøer",
             "Å være effektive samfunnsaktører for historieformidling i Levanger og omegn",
         ],
-        button: { text: "bli medlem", link: "/medlem" }
+        button: { text: "bli medlem", link: "/medlem" },
     },
     om: {
         title: "om oss",
         paragraph1: "Bymuseet i Levanger er en medlemsorganisasjon med stor frivillig innsats og engasjement. Museet har samlet sett mye kompetanse og forvalter en viktig bygningsmasse, og en stor samling gjenstander og dokumenter. Organisasjonen har god anseelse lokalt, og har et positivt forhold til offentlige myndigheter. Bymuseet driver viktig formidling på digitale plattformer, og er en sentral aktør og samarbeidspartner under arrangement i Trehusbyen Levanger.",
         paragraph2: "Behovet for å styrke formidlingsaktiviteten og ønsket om å få på plass en egen hjemmeside ble drøftet under et arbeidsseminar og en strategisamling i 2023, der styret og utvalgene drøftet status, utfordringer og satsninger i årene framover. Museet eier og forvalter flere vernede og kulturhistorisk viktige bygninger, og har også samlinger som skal registreres, forvaltes og oppbevares på en forsvarlig måte.",
-        button: { text: "les mer", link: "/om" }
+        button1: { text: "les mer", link: "/om" },
+        button2: { text: "våre tilbud", link: "/tilbud" }
     },
     velkommen: {
         title: "velkommen",

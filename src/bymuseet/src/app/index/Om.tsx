@@ -6,6 +6,7 @@ import { textContent } from "../Utils/data/text";
 
 const Om = () => {
     const { om } = textContent;
+
     return (
         <div className="w-full flex flex-col lg:flex-row mb-5 md:mb-10">
             <div className="md:rounded-t-md lg:rounded-s-md lg:rounded-e-none lg:h-auto h-60 lg:w-1/3 xl:w-2/5 w-full relative shadow-md">
@@ -21,7 +22,10 @@ const Om = () => {
                 <SubTitle text={om.title} />
                 <p className="mb-4">{om.paragraph1}</p>
                 <p>{om.paragraph2}</p>
-                <Button icon="ArrowRight_sm" text={om.button.text} link={om.button.link} />
+                <span className="flex flex-col md:flex-row md:gap-4">
+                    <Button icon="ArrowRight_sm" text={om.button1.text} link={om.button1.link} />
+                    <Button icon="ArrowRight_sm" text={om.button2.text} link={om.button2.link} />
+                </span>
             </div>
         </div>
     )
