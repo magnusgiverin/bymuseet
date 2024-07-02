@@ -28,7 +28,7 @@ const locations: Location[] = [
     description: 'Fra 1803 til 1883 var dette lensmannsgård for lensmennene Bardo Westrum, Ole Lynum og Bernt Oluf Lynum. I tillegg var Brusve et betydelig gårdsbruk.\n\nI folketellingen i 1835 er oppført hele 11 tjenestefolk på gården. Nå står låna og stabburet igjen. Valget av utsendinger fra amtet til Eidsvoldssamlingen foregikk på Brusve i 1814. \n\nOnsdager er det kafe på Brusve. Følg med på bymuseets facebooksider for tidspunkt.',
     info: {
       info1: 'Brusve gård ligger plassert ved Brusve bru over Levangerelva, i fonden av Brugaten fra Levanger sentrum. Embetsgården er delvis innbygget i et boligstrøk, men mot nordvest er det åpnet for et grøntareal med trær. Foruten den fredete hovedbygningen omfatter anlegget et gammelt stabbur og et nyere uthus.Brusve var fram til 1802 husmannsplass under vestre Ulve. Fra 1803 til 1883 var dette embetsgård for lensmennene Bardo Westrum, Ole Lynum og Bernt Oluf Lynum. I tillegg var Brusve et betydelig gårdsbruk. I folketellingen i 1835 er det oppført hele 11 tjenestefolk på gården. I 1889 kjøpte amtmann Peter Holst gården.',
-      info2: 'Valget av utsendinger fra amtet til Eidsvoldssamlingen foregikk på Brusve i 1814. Brusve nedre har også vært vertskap for kongelig besøk ifølge innberetningen: "Karl Johan bodde der under sit opphold i Trøndelagen 1838".',
+      info2: 'Valget av utsendinger fra amtet til Riksforsamlingen på Eidsvold i 1814  foregikk på Brusve. Brusve nedre har også vært vertskap for kongelig besøk ifølge innberetningen: "Karl Johan bodde der under sit opphold i Trøndelagen 1838.',
       info3: 'Hovedbygningen består av to midtkammerbygninger og er satt opp i to omganger. Den nordvestre delen stod ferdig i 1803 og den sørøstre delen i 1811. Bygningen har profilert etasjeskille og gesims med tannsnitt. Taket har asymmetrisk anbrakte arker. Fasaden mot gården har 3 empireportaler med glatte halvsøyler, overlysvindu og høyt profilert overstykke med tannsnitt og romber i lavt relieff. I vinkel med hovedbygningen står stabburet som er i to etasjer med utvendig stående panel.Fra 1900 ble Brusve eid av flere; Sandstad, Vennes, Folden og Janke, og eiendommen ble etter hvert oppstykket og solgt til villatomter. I 1949 kjøpte Frol kommune det som var igjen av hus og jord, og ved kommunesammenslutningen ble Levanger kommune eier. I 1984 ble Levanger museum eier. Brusve gård eies i dag av Bymuseet i Levanger.',
     },
     facts: {
@@ -94,9 +94,10 @@ const locations: Location[] = [
     name: 'Reinslyst',
     image: '/images/reinslyst-arbeiderbolig/reinslyst-arbeiderbolig-main.jpg',
     dir: '/images/reinslyst-arbeiderbolig/',
-    description: 'Dette er en gammel arbeiderbolig som opprinnelig lå i Gamle Kongevei, ca 200 m fra Brusve Gård.\n\nHer lå ca 7-8 små hus på Brusves grunn, og beboerne var stort sett husmenn med arbeidsplikt på gården. Boligen visr hvordan folk i små kår bodde og virket, i stor kontrast til de høyere sosiale lags overdådige levesett.',
+    description: 'Dette er en gammel arbeiderbolig som opprinnelig lå i Gamle Kongevei, ca 200 m fra Brusve Gård.\n\nHer lå ca 7-8 små hus på Brusves grunn, og beboerne var stort sett husmenn med arbeidsplikt på gården. Boligen viser hvordan folk i små kår bodde og virket, i stor kontrast til de høyere sosiale lags overdådige levesett.\n\nBoligen ble flyttet til tunet på Brusve gård i 1984.',
     facts: {
-      byggeår: '1855'
+      byggeår: 'før 1835',
+      stilart: 'Empirepreget'
     }
   },
   {

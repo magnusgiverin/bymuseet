@@ -45,8 +45,6 @@ export default function Lokalitet() {
         }
     }, [location]);
 
-    console.log(images);
-
     return (
         <main className='mb-5 md:mb-10 flex flex-col items-center'>
             {location ? (
