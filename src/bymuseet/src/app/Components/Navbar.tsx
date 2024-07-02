@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex justify-center">
         <div className="hidden sm:block sm:flex flex-row w-full sm:w-auto justify-between sm:items-center">
           {shortcuts.map((shortcut, index) => {
-            const isActive = pathname === shortcut.url;
+            const isActive = shortcut.pages.includes(pathname);
             return (
               <a
                 key={index}
