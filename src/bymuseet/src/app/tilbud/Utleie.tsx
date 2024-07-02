@@ -17,7 +17,7 @@ const Utleie = () => {
                         <p className="font-bold text-green-800 whitespace-pre-wrap">{spacedText(option.title)}</p>
                         <p>{option.details}</p>
                         {option.link && (
-                            <a href={option.link} target="_blank" rel="noopener noreferrer" className="mb-5 text-blue-600 underline">
+                            <a href={option.link} target="_blank" rel="noopener noreferrer" className="mb-5 text-blue-600 hover:underline">
                                 {option.linkText}
                             </a>
                         )}
@@ -25,7 +25,7 @@ const Utleie = () => {
                             <p>
                                 {option.contact}
                                 {" "}
-                                <a href={"mailto:" + option.email} className="text-blue-600 underline">
+                                <a href={"mailto:" + option.email} className="text-blue-600 hover:underline">
                                     {option.email}
                                 </a>
                             </p>

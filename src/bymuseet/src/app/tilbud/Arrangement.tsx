@@ -21,7 +21,7 @@ const Arrangement = () => {
             <div className="flex flex-col shadow-md w-full bg-white md:rounded-md py-8 px-4 md:p-8 lg:w-2/3 xl:w-2/5 md:rounded-b-md lg:rounded-e-md lg:rounded-s-none">
                 <SubTitle text={arrangement.title} />
                 <p>{arrangement.description}</p>
-                <a href={arrangement.facebookLink} target="_blank" className="text-blue-600 underline mt-2">
+                <a href={arrangement.facebookLink} target="_blank" className="text-blue-600 hover:underline mt-2">
                     Facebook siden vår
                 </a>
                 <div className="flex flex-col gap-2 mt-6">
@@ -32,7 +32,7 @@ const Arrangement = () => {
                         ))}
                     </ul>
                 </div>
-                <a href={arrangement.moreInfoLink} target="_blank" className="text-blue-600 underline mt-6">
+                <a href={arrangement.moreInfoLink} target="_blank" className="text-blue-600 hover:underline mt-6">
                     Mer om faste arrangement i Levanger her
                 </a>
             </div>

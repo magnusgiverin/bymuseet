@@ -23,13 +23,13 @@ const Byvandring = () => {
                     <p>{byvandring.info.time}</p>
                     <p>
                         {byvandring.info.contact}
-                        <a href={`mailto:${byvandring.info.contactMail}`} className="text-blue-600 underline">
+                        <a href={`mailto:${byvandring.info.contactMail}`} className="text-blue-600 hover:underline">
                             {byvandring.info.contactMail}
                         </a>
                     </p>
                     <p>
                         {byvandring.info.contactPerson}
-                        <a href={`tel:${byvandring.info.contactPhone}`} className="text-blue-600 underline">
+                        <a href={`tel:${byvandring.info.contactPhone}`} className="text-blue-600 hover:underline">
                             {byvandring.info.contactPhone}
                         </a>
                     </p>
@@ -38,7 +38,7 @@ const Byvandring = () => {
                     <p className="font-bold text-green-800 mt-3 whitespace-pre-wrap">{spacedText(byvandring.additional.title + ":")}</p>
                     <div className="flex flex-col gap-2">
                         {byvandring.additional.links.map((link, index) => (
-                            <a key={index} href={link.link} target="_blank" rel="noopener noreferrer" className="underline text-blue-600 hover:underline">
+                            <a key={index} href={link.link} target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-600">
                                 {link.buttonText}
                             </a>
                         ))}
