@@ -25,7 +25,14 @@ export default function Lokalitet() {
                             imagePaths.push(imagePath);
                             i++;
                         } else {
-                            break;
+                            const imagePath = `${location.dir}${location.id}-${i}.JPG`; // Adjust the extension if necessary
+                            const res = await fetch(imagePath);
+                            if (res.ok) {
+                                imagePaths.push(imagePath);
+                                i++;
+                            } else {
+                                break;
+                            }
                         }
                     } catch {
                         break;
