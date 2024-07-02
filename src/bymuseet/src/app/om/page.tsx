@@ -31,9 +31,9 @@ export default function Om() {
                     Bymuseet i Levanger var opprinnelig en del av stiftelsen Levanger museum som ble opprettet 1. februar 1984 der følgende var med: Levanger kommune, Skogn museumslag, Fortidsminneforeningen, Levanger historielag, familien Bjerkan (fotosamling), Levanger håndverk- og industriforening og Levanger Bygdeboknemnd. Brusve gård ble administrasjonssenter for Levanger museum.
                 </p>
                 <p className="mt-4">
-                    I 1998 ble Levanger museum omorganisert som følge av kommunens museumsplan av 1996. Denne omorganiseringa resulterte i opprettelsen av Stiftelsen Levanger museum som rent fotomuseum med fylkeskommunalt ansvar (i dag
+                    {"I 1998 ble Levanger museum omorganisert som følge av kommunens museumsplan av 1996. Denne omorganiseringa resulterte i opprettelsen av Stiftelsen Levanger museum som rent fotomuseum med fylkeskommunalt ansvar (i dag "}
                     <Link target="_blank" href="https://levangerfotomuseum.no/">
-                        <span className="text-blue-600 hover:underline">{" Levanger fotomuseum"}</span>
+                        <span className="text-blue-600 hover:underline">{"Levanger fotomuseum"}</span>
                     </Link>
                     ) og Bymuseet i Levanger som frivillig organisasjon. Bymuseet ble eiere/forvaltere av Brusve gård (med stabbur, uthusbygning og det tidligere herredshuset for Frol kommune), arbeiderboligen Reinslyst, Dampskipsbrygga, bilmuseet Hveding Auto, Skolemuseet og Emilies hus.
                 </p>
