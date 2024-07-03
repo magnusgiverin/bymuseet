@@ -4,10 +4,13 @@ import ReactDOM from 'react-dom';
 import Icons from '../Utils/Icons';
 import { spacedText } from '../Utils/spacedText';
 import shortcuts from '../Utils/data/shortcuts';
+import { usePathname } from 'next/navigation';
 
 const Dropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
+
+    const pathname = usePathname();
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -47,16 +50,19 @@ const Dropdown = () => {
                 {/* Dropdown content */}
                 {isOpen && (
                     <div className='absolute right-0 mt-9 w-screen bg-white z-30'>
-                        {shortcuts.map((shortcut, index) => (
-                            <a
-                                key={index}
-                                href={shortcut.url}
-                                className='block px-4 py-2 text-sm text-black flex flex-row gap-4 hover:text-green-800'
-                            >   
-                                <h3 className='flex whitespace-pre-wrap items-center'>{shortcut.header.toUpperCase()}</h3>
-                                <Icons name='ArrowRight_sm'/>
-                            </a>
-                        ))}
+                        {shortcuts.map((shortcut, index) => {
+                            const isActive = shortcut.pages.includes(pathname);
+                            return (
+                                <a
+                                    key={index}
+                                    href={shortcut.url}
+                                    className={`${isActive ? 'font-bold text-green-800' : ''} block px-4 py-2 text-sm text-black flex flex-row gap-4 hover:text-green-800`}
+                                >
+                                    <h3 className='flex whitespace-pre-wrap items-center'>{shortcut.header.toUpperCase()}</h3>
+                                    <Icons name='ArrowRight_sm' />
+                                </a>
+                            )
+                        })}
                     </div>
                 )}
             </div>
