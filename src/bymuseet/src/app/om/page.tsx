@@ -19,7 +19,7 @@ export default function Om() {
                     {omSide.intro.boardMembers.map((member, index) => <li key={"member-" + index}>{member}</li> )}
                 </ul>
                 <p className="mt-4">{omSide.intro.paragraph3}</p>
-                <Button link={omSide.intro.medlem.url} icon={"Medlem"} text={omSide.intro.medlem.text}/>
+                <Button link={omSide.intro.medlem.url} icon={"ArrowRight_sm"} text={omSide.intro.medlem.text}/>
             </div>
             <div className="w-full bg-white p-8 md:rounded-md flex flex-col py-8 px-4 md:p-8 mt-5 md:mt-10">
                 <SubTitle text={omSide.background.subTitle} />

@@ -22,7 +22,7 @@ const Formål = () => {
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
-                <Button icon="Medlem" text={formål.button.text} link={formål.button.link} />
+                <Button icon="ArrowRight_sm" text={formål.button.text} link={formål.button.link} />
             </div>
             <div className="h-60 w-full relative shadow-md md:rounded-b-md lg:rounded-s-none lg:rounded-e-md lg:h-auto lg:w-1/3 xl:w-2/5">
                 <Image

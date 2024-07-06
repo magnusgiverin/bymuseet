@@ -32,7 +32,7 @@ const Utleie = () => {
                         )}
                     </div>
                 ))}
-                <Button icon="Camera" text={"Se bilder"} link="/tilbud/bilder"/>
+                <Button icon="ArrowRight_sm" text={"Se bilder"} link="/tilbud/bilder"/>
             </div>
             <div className="h-60 w-full relative shadow-md md:rounded-b-md lg:rounded-s-none lg:rounded-e-md lg:h-auto lg:w-3/5">
                 <Image

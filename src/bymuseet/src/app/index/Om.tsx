@@ -23,8 +23,8 @@ const Om = () => {
                 <p className="mb-4">{om.paragraph1}</p>
                 <p>{om.paragraph2}</p>
                 <span className="flex flex-col md:flex-row md:gap-4">
-                    <Button icon="Om" text={om.button1.text} link={om.button1.link} />
-                    <Button icon="Formidling" text={om.button2.text} link={om.button2.link} />
+                    <Button icon="ArrowRight_sm" text={om.button1.text} link={om.button1.link} />
+                    <Button icon="ArrowRight_sm" text={om.button2.text} link={om.button2.link} />
                 </span>
             </div>
         </div>
