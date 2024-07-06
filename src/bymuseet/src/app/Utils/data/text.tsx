@@ -114,6 +114,10 @@ export const textContent = {
                 "Hege-Lill Bråten, styremedlem",
                 "Jan Heggdal, styremedlem",
             ],
+            medlem: {
+                text: 'Bli medlem',
+                url: '/medlem',
+            },
             paragraph3: "Bymuseet har i tillegg fem arbeidsutvalg knyttet til museets eiendommer: Brusve gård, Emilies hus, Dampskipsbrygga, inkl. Martnas- og byhistorie, Bilmuseet Hveding Auto og Skolemuseet. Utvalgslederne velges av styret."
         },
         background: {
@@ -122,7 +126,7 @@ export const textContent = {
             paragraph21: "I 1998 ble Levanger museum omorganisert som følge av kommunens museumsplan av 1996. Denne omorganiseringa resulterte i opprettelsen av Stiftelsen Levanger museum som rent fotomuseum med fylkeskommunalt ansvar (i dag ",
             paragraph22: ") og Bymuseet i Levanger som frivillig organisasjon. Bymuseet ble eiere/forvaltere av Brusve gård (med stabbur, uthusbygning og det tidligere herredshuset for Frol kommune), arbeiderboligen Reinslyst, Dampskipsbrygga, bilmuseet Hveding Auto, Skolemuseet og Emilies hus.",
             readMoreLink: {
-                text: "Les mer her",
+                text: "Les mer",
                 url: "https://www.innherred.no/nyheter/i/kE74jk/disse-var-de-foerste-i-styret-naa-kan-museet-feire-40-aar"
             }
         }
