@@ -47,7 +47,7 @@ export const textContent = {
     tilbud: {
         title: "Våre tilbud",
         description: "byvandring, utleie, og arrangement",
-    },    
+    },
     byvandring: {
         title: "byvandring",
         info: {
@@ -98,5 +98,33 @@ export const textContent = {
             "Levangermartnan"
         ],
         moreInfoLink: "https://www.levanger.kommune.no/tjenester/kultur-idrett-og-fritid/kommunens-arlige-arrangementer/"
+    },
+    omSide: {
+        title: "Om organiasjonen vår",
+        shortTitle: "organisasjon",
+        intro: {
+            paragraph1: "Bymuseet ledes av et styre som velges på årsmøtet som er Bymuseets høyeste besluttende organ.",
+            paragraph2: "Styret i 2024 består av følgende personer:",
+            boardMembers: [
+                "Tone Jørstad, styreleder",
+                "Asbjørn Rørslett Kolberg, nestleder",
+                "Oda Moen Møst, sekretær",
+                "Sissel Moksnes Hegdal, kasserer",
+                "Marit Fosså, styremedlem",
+                "Hege-Lill Bråten, styremedlem",
+                "Jan Heggdal, styremedlem",
+            ],
+            paragraph3: "Bymuseet har i tillegg fem arbeidsutvalg knyttet til museets eiendommer: Brusve gård, Emilies hus, Dampskipsbrygga, inkl. Martnas- og byhistorie, Bilmuseet Hveding Auto og Skolemuseet. Utvalgslederne velges av styret."
+        },
+        background: {
+            subTitle: "Bakgrunn",
+            paragraph1: "Bymuseet i Levanger var opprinnelig en del av stiftelsen Levanger museum som ble opprettet 1. februar 1984 der følgende var med: Levanger kommune, Skogn museumslag, Fortidsminneforeningen, Levanger historielag, familien Bjerkan (fotosamling), Levanger håndverk- og industriforening og Levanger Bygdeboknemnd. Brusve gård ble administrasjonssenter for Levanger museum.",
+            paragraph21: "I 1998 ble Levanger museum omorganisert som følge av kommunens museumsplan av 1996. Denne omorganiseringa resulterte i opprettelsen av Stiftelsen Levanger museum som rent fotomuseum med fylkeskommunalt ansvar (i dag ",
+            paragraph22: ") og Bymuseet i Levanger som frivillig organisasjon. Bymuseet ble eiere/forvaltere av Brusve gård (med stabbur, uthusbygning og det tidligere herredshuset for Frol kommune), arbeiderboligen Reinslyst, Dampskipsbrygga, bilmuseet Hveding Auto, Skolemuseet og Emilies hus.",
+            readMoreLink: {
+                text: "Les mer her",
+                url: "https://www.innherred.no/nyheter/i/kE74jk/disse-var-de-foerste-i-styret-naa-kan-museet-feire-40-aar"
+            }
+        }
     }
 };

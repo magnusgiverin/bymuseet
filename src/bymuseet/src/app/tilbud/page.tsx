@@ -1,8 +1,4 @@
 'use client';
-import { SubTitle } from "@/app/Components/Title";
-import { spacedText } from "@/app/Utils/spacedText";
-import Button from "../Components/Button";
-import { textContent } from "../Utils/data/text";
 import Banner from "./TilbudBanner";
 import Byvandring from "./Byvandring";
 import Utleie from "./Utleie";
