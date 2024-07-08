@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Bymuseet i Levanger",
   description: "Den offisielle hovednettsiden for Bymuseet i Levanger, Norge. Her kan du lese om arbeidet vi gjør for Levanger som historisk by",
+  keywords: ["museum", "bymuseum", "levanger", "trøndelag", "trondelag", "historie", "trebygg", "fredet", "kulturminne", "skogn", "nord", "norge", "frivillig", "læring"]
 };
 
 export default function RootLayout({
