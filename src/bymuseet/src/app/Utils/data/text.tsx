@@ -74,15 +74,11 @@ export const textContent = {
         options: [
             {
                 title: "Brusve gård",
-                details: "Brusve gård egner seg til ulike arrangementer som for eksempel møter, familieselskaper, konfirmasjoner for grupper på inntil 35 personer.",
-                linkText: "Priser og kontaktinfo her",
-                link: "https://levafro.no/leie-brusve-gard/"
+                details: "Brusve gård egner seg til ulike arrangementer som for eksempel møter, familieselskaper, konfirmasjoner for grupper på inntil 45 personer.",
             },
             {
                 title: "Dampskipsbrygga",
                 details: "Egner seg til møter og selskaper (f.eks. bryllup) for grupper på inntil 95 personer.",
-                contact: "Kontakt oss for priser og bestilling:",
-                email: "bymuseetilevanger@gmail.com"
             }
         ]
     },
