@@ -4,6 +4,7 @@ import Image from "next/image";
 import utleieBilde from "../../../public/images/pynt/tilbud-2.jpg";
 import { spacedText } from "../Utils/spacedText";
 import Button from "../Components/Button";
+import Link from "next/link";
 
 const Utleie = () => {
     const { utleie } = textContent;
@@ -21,9 +22,9 @@ const Utleie = () => {
                 ))}
                 </span>
               
-                <a href={utleie.infoLink} className="flex text-blue-600 hover:underline mt-4">
+                <Link href={utleie.infoLink} target="_blank" className="flex text-blue-600 hover:underline mt-6">
                 {utleie.infoLinkText}
-                </a>
+                </Link>
                     
                 <Button icon="ArrowRight_sm" text={"Se bilder"} link="/tilbud/bilder"/>
             </div>
