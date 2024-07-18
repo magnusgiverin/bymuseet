@@ -9,7 +9,7 @@ const Om = () => {
 
     return (
         <div className="w-full flex flex-col lg:flex-row mb-5 md:mb-10">
-            <div className="md:rounded-t-md lg:rounded-s-md lg:rounded-e-none lg:h-auto h-60 lg:w-1/3 xl:w-2/5 w-full relative shadow-md">
+            <div className="md:rounded-t-md lg:rounded-s-md lg:rounded-e-none lg:h-auto h-60 lg:w-1/3 xl:w-1/2 w-full relative shadow-md">
                 <Image
                     src={omBilde}
                     alt="Fasade Levanger"
