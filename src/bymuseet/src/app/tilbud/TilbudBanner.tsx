@@ -16,7 +16,11 @@ const TilbudBanner = () => {
                     className="absolute inset-0 z-0"
                 />
                 <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center z-10">
-                    <div className="text-left backdrop-blur-3xl rounded-2xl py-4 px-8 text-white">
+                    <div className="text-left rounded-2xl py-4 px-8 text-white"
+                    style={{
+                        backdropFilter: 'blur(40px)',
+                        WebkitBackdropFilter: 'blur(40px)'
+                    }}>
                         <h1 className="text-2xl font-bold whitespace-pre-wrap">{spacedText(tilbud.title)}</h1>
                         <p className="text-sm whitespace-pre-wrap">{spacedText(tilbud.description)}</p>
                     </div>
