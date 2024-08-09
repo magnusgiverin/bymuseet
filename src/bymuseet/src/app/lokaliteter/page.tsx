@@ -28,7 +28,7 @@ const Lokaliteter = () => {
                         <div className="py-8 px-4 md:p-8 flex flex-col w-full gap-4 justify-between"> {/* Adjusted to push content to the top and button to the bottom */}
                             <div className="flex flex-col w-full gap-4">
                                 <p className="whitespace-pre-wrap font-bold text-green-800">{spacedText(loc.name)}</p>
-                                <p>{loc.description}</p>
+                                <p className="whitespace-pre-wrap">{loc.description}</p>
                             </div>
                             <div className="mt-auto">
                                 <Button text="lær mer" icon={"ArrowRight_sm"} link={"/lokaliteter/" + loc.id} />
