@@ -16,7 +16,6 @@ export const textContent = {
             "Å samle og bevare gjenstander i autentiske miljøer",
             "Å være effektive samfunnsaktører for historieformidling i Levanger og omegn",
         ],
-        button: { text: "bli medlem", link: "/medlem" },
     },
     om: {
         title: "om oss",
@@ -47,6 +46,8 @@ export const textContent = {
     tilbud: {
         title: "Våre tilbud",
         description: "byvandring, utleie, og arrangement",
+        buttonText: "Se våre tilbud",
+        buttonLink: "/tilbud",
     },
     byvandring: {
         title: "byvandring",

@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full">
         <div className="hidden sm:block pl-4 lg:pl-10">
           <span className="whitespace-pre-wrap text-green-800">
-            <p className='whitespace-pre-wrap text-sm'>{spacedText("bymuseet i levanger")}</p>
+            <p className='whitespace-pre-wrap text-md'>{spacedText("bymuseet i levanger")}</p>
           </span>
         </div>
         <div className="hidden sm:flex flex-grow justify-end items-center pr-4 lg:pr-10">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 style={isActive ? { textDecoration: 'underline', textUnderlineOffset: '6px', textDecorationThickness: '2px' } : {}}
               >
                 {shortcut.icon}
-                <p className='whitespace-pre-wrap text-xs hidden lg:block'>{spacedText(shortcut.header)}</p>
+                <p className='whitespace-pre-wrap text-sm hidden lg:block'>{spacedText(shortcut.header)}</p>
               </a>
             );
           })}
