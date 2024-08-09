@@ -46,7 +46,7 @@ export const textContent = {
     tilbud: {
         title: "Våre tilbud",
         description: "byvandring, utleie, og arrangement",
-        buttonText: "Se våre tilbud",
+        buttonText: "Les mer",
         buttonLink: "/tilbud",
     },
     byvandring: {
