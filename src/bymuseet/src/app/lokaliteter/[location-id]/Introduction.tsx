@@ -13,7 +13,7 @@ const Introduction: React.FC<IntroductionProps> = ({ location }) => {
             <div className="bg-white py-8 px-4 md:p-8 shadow-md lg:w-1/2 xl:w-3/5 w-full md:rounded-s-md">
                 <Title text={location.name} />
                 <p className="whitespace-pre-wrap">{location.description}</p>
-                <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' />
+                <Button icon={'ArrowLeft_sm'} text={'tilbake'} iconPosition='left' link='/lokaliteter' />
             </div>
             <div className="lg:h-auto h-60 lg:w-1/2 xl:w-2/5 w-full relative shadow-md">
                 <Image

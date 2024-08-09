@@ -14,14 +14,22 @@ const shortcuts: ShortcutLink[] = [
         url: '/',
         pages: [
             '/', 
+        ],
+        icon: <Icons name={"Hjem"}/>
+    },
+    {
+        header: "Lokaliteter",
+        url: '/lokaliteter',
+        pages: [     
+            '/lokaliteter',        
             '/lokaliteter/brusve-gard', 
             '/lokaliteter/hveding-auto', 
             '/lokaliteter/reinslyst-arbeiderbolig', 
             '/lokaliteter/dampskipsbrygga',
             '/lokaliteter/emilies-hus',
-            '/lokaliteter/skolemuseet',
+            '/lokaliteter/skolemuseet'
         ],
-        icon: <Icons name={"Hjem"}/>
+        icon: <Icons name={"Pin"} />
     },
     {
         header: 'Om oss',

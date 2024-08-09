@@ -1,3 +1,5 @@
+'use client';
+
 import { SubTitle, Title } from "@/app/Components/Title";
 import { spacedText } from "@/app/Utils/spacedText";
 import Link from "next/link";
