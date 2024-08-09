@@ -25,7 +25,6 @@ const Tilbud = () => {
                     {utleie.infoLinkText}
                 </Link>
                 <span className="flex flex-col md:flex-row xl:flex-col md:gap-4 xl:gap-0">
-                    <Button icon="ArrowRight_sm" text={"Se bilder"} link="/tilbud/bilder" />
                     <Button icon="ArrowRight_sm" text={tilbud.buttonText} link={tilbud.buttonLink} />
                 </span>
             </div>
