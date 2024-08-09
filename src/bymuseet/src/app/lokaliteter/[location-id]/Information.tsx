@@ -10,7 +10,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
     return (
         <>
             {location.info ? (
-                <div className='flex flex-col lg:flex-row gap-5 md:gap-10 mb-5 md:mb-10'>
+                <div className='flex flex-col lg:flex-row gap-5 md:gap-10'>
                     {location.facts && (
                         <div className='flex flex-col shadow-md w-full lg:w-1/4 bg-white md:rounded-md py-8 px-4 md:p-8 gap-y-4'>
                             {Object.entries(location.facts)
@@ -35,7 +35,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
             ) : (
                 <>
                     {location.facts && (
-                        <div className='flex flex-col shadow-md w-full mb-5 md:mb-10 bg-white md:rounded-md py-8 px-4 md:p-8 gap-y-4'>
+                        <div className='flex flex-col shadow-md w-full bg-white md:rounded-md py-8 px-4 md:p-8 gap-y-4'>
                             {Object.entries(location.facts)
                                 .map(([key, value]) => (
                                     <span key={key} className='flex flex-col'>
