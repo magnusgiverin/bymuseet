@@ -16,16 +16,15 @@ const Lokaliteter = () => {
                         key={loc.id}
                         className="flex flex-col xl:flex-row bg-white shadow-md relative md:rounded-lg w-full"
                     >
-                        <div className="relative w-full xl:w-1/2 h-[220px] xl:h-[370px] overflow-hidden">
+                        <div className="relative w-full xl:w-1/2 h-[300px] xl:h-auto overflow-hidden">
                             <Image
                                 src={loc.image}
                                 alt={loc.name}
                                 layout="fill"
-                                objectFit="cover"
-                                className="xl:rounded-s-lg xl:rounded-tr-none md:rounded-tl-lg md:rounded-tr-lg"
+                                className="object-cover w-full xl:rounded-s-lg xl:rounded-tr-none md:rounded-tl-lg md:rounded-tr-lg"
                             />
                         </div>
-                        <div className="py-8 px-4 md:p-8 flex flex-col w-full gap-4 justify-between"> {/* Adjusted to push content to the top and button to the bottom */}
+g                        <div className="py-8 px-4 md:p-8 flex flex-col w-full gap-4 justify-between"> {/* Adjusted to push content to the top and button to the bottom */}
                             <div className="flex flex-col w-full gap-4">
                                 <p className="whitespace-pre-wrap font-bold text-green-800">{spacedText(loc.name)}</p>
                                 <p className="whitespace-pre-wrap">{loc.description}</p>
