@@ -35,6 +35,14 @@ const Lokaliteter = () => {
                         </div>
                     </div>
                 ))}
+                <div className="h-[600px] mt-20 inline-block overflow-hidden md:rounded-lg">
+                    <iframe
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1MoCbFMMTQF254Jsaf84HGwCX-6QLj2I&ehbc=2E312F&noprof=1"
+                        className="w-full h-[600px] md:rounded-lg"
+                        style={{ position: "relative", top: "-50px", border: "none" }}
+                    >
+                    </iframe>
+                </div>
             </div>
         </div>
     )
