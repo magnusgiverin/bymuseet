@@ -24,7 +24,7 @@ const Navbar = () => {
                 style={isActive ? { textDecoration: 'underline', textUnderlineOffset: '6px', textDecorationThickness: '2px' } : {}}
               >
                 {shortcut.icon}
-                <p className='mt-1 whitespace-pre-wrap text-sm hidden lg:block tracking-[0.15em]'>{shortcut.header.toUpperCase()}</p>
+                <p className='mt-1 whitespace-pre-wrap text-xs xl:text-sm hidden lg:block tracking-[0.15em]'>{shortcut.header.toUpperCase()}</p>
               </a>
             );
           })}
