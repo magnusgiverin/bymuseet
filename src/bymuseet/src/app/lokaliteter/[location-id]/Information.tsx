@@ -10,7 +10,7 @@ const Information: React.FC<InformationProps> = ({ location }) => {
     return (
         <>
             {location.info ? (
-                <div className='flex flex-col lg:flex-row gap-5 md:gap-10'>
+                <div className='flex flex-col lg:flex-row gap-5 md:gap-10 w-full'>
                     {location.facts && (
                         <div className='flex flex-col shadow-md w-full lg:w-1/4 bg-white md:rounded-md py-8 px-4 md:p-8 gap-y-4'>
                             {Object.entries(location.facts)
