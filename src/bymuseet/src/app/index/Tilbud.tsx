@@ -11,7 +11,7 @@ const Tilbud = () => {
 
     return (
         <div className="flex flex-col xl:flex-row w-full mt-5 md:mt-10 gap-5 md:gap-10">
-            <div className="hidden md:block bg-white md:rounded-md shadow-md py-8 px-4 md:p-8 gap-y-2 md:flex md:flex-row md:w-full md:space-x-10 w-full xl:w-2/3">
+            <div className="bg-white md:rounded-md shadow-md py-8 px-4 md:p-8 gap-y-2 md:flex md:flex-row md:w-full md:space-x-10 w-full xl:w-2/3">
                 <div className="mb-5 md:mb-0 md:flex-1">
                     <SubTitle text={byvandring.title} />
                     <div className="flex flex-col gap-4">

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bakgrunnBilde from "../../../public/images/pynt/bakgrunn.jpg";
+import bakgrunnBilde from "../../../public/images/pynt/bakgrunn2.jpg";
 import { spacedText } from "../Utils/spacedText";
 import { textContent } from "../Utils/data/text";
 

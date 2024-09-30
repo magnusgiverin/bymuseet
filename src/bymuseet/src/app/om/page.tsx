@@ -5,7 +5,7 @@ import Banner from "./OmOssBanner";
 import { textContent } from "../Utils/data/text";
 import Button from "../Components/Button";
 import Image from "next/image";
-import formålBilde from "../../../public/images/pynt/pynt-1.jpg";
+import formålBilde from "../../../public/images/pynt/pynt-3.jpg";
 
 export default function Om() {
     const { omSide, formål } = textContent;

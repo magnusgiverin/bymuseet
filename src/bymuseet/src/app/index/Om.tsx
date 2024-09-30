@@ -1,7 +1,7 @@
 import Button from "../Components/Button";
 import { SubTitle } from "../Components/Title";
 import Image from "next/image";
-import omBilde from "../../../public/images/pynt/pynt-2.jpg";
+import omBilde from "../../../public/images/pynt/pynt-4.jpg";
 import { textContent } from "../Utils/data/text";
 
 const Om = () => {
