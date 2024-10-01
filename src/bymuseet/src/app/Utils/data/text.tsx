@@ -83,8 +83,10 @@ export const textContent = {
                 details: "Egner seg til møter og selskaper (f.eks. bryllup) for grupper på inntil 95 personer.",
             }
         ],
-        infoLinkText: "Priser og kontaktinfo her",
-        infoLink: "https://levafro.no/leie-brusve-gard/",
+        infoLinkText1: "Utleie av Brusve her",
+        infoLink1: "https://levafro.no/leie-brusve-gard/",
+        infoLinkText2: "Utleie av Dampskipsbrygga her",
+        infoLink2: "https://levafro.no/leie-brusve-gard-copy/",
     },
     arrangement: {
         title: "Arrangement",
