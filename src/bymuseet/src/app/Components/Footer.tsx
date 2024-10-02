@@ -17,10 +17,6 @@ const Footer = () => {
             <p className="font-bold mt-4">Postadresse:</p>
             <p>Gimlevegen 1</p>
             <p>7605 LEVANGER</p>
-            <div className="flex flex-row gap-1 mt-4">
-              <p className="font-bold">Bilder:</p>
-              <p>Frank Thomassen © {year}</p>
-            </div>
             <p className="mt-4">Bymuseet i Levanger © {year}</p>
           </div>
 
