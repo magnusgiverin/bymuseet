@@ -17,6 +17,10 @@ export interface Location {
     fredet?: string;
   };
   arrangementerDir?: string;
+  galleryLink?: {
+    url: string;
+    text: string;
+  }
 }
 
 const locations: Location[] = [
@@ -70,6 +74,10 @@ const locations: Location[] = [
     facts: {
       byggeår: 'ca. 1897',
       adresse: 'Sjøgata 40',
+    },
+    galleryLink: {
+      url: "https://vimeo.com/1033566847?share=copy",
+      text: 'Se video'
     }
   },
   {

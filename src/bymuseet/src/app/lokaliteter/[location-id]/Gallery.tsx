@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from 'next/image';
 import { Location } from '@/app/Utils/data/locations';
 import { spacedText } from "@/app/Utils/spacedText";
+import Button from "@/app/Components/Button";
 
 interface GalleryProps {
     images: string[];
@@ -52,6 +53,9 @@ const Gallery: React.FC<GalleryProps> = ({ images, location }) => {
                             </div>
                         ))}
                     </div>
+                    {location.galleryLink && (
+                        <Button icon={"ArrowRight_sm"} text={location.galleryLink.text} link={location.galleryLink.url} target="_blank"/>
+                    )}
                 </div>
             )}
 
