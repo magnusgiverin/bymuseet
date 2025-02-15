@@ -47,17 +47,24 @@ const ArrangementBilder = () => {
         let i = 1;
 
         while (true) {
-            const imagePath = `${location.arrangementerDir}${location.id}-${i}.jpg`; // Adjust the extension if necessary
+            const jpgPath = `${location.arrangementerDir}${location.id}-${i}.jpg`;
+            const pngPath = `${location.arrangementerDir}${location.id}-${i}.png`;
+
             try {
-                const res = await fetch(imagePath);
-                if (res.ok) {
-                    imagePaths.push(imagePath);
-                    i++;
-                } else {
-                    break;
-                }
-            } catch {
+            const jpgRes = await fetch(jpgPath);
+            const pngRes = await fetch(pngPath);
+
+            if (jpgRes.ok) {
+                imagePaths.push(jpgPath);
+            } else if (pngRes.ok) {
+                imagePaths.push(pngPath);
+            } else {
                 break;
+            }
+
+            i++;
+            } catch {
+            break;
             }
         }
 

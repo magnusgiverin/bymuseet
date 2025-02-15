@@ -18,23 +18,25 @@ export default function Lokalitet() {
                 let imagePaths = [];
                 let i = 1;
                 while (true) {
-                    const imagePath = `${location.dir}${location.id}-${i}.jpg`; // Adjust the extension if necessary
-                    try {
-                        const res = await fetch(imagePath);
-                        if (res.ok) {
-                            imagePaths.push(imagePath);
-                            i++;
-                        } else {
-                            const imagePath = `${location.dir}${location.id}-${i}.JPG`; // Adjust the extension if necessary
+                    const extensions = ['jpg', 'JPG', 'png'];
+                    let found = false;
+
+                    for (const ext of extensions) {
+                        const imagePath = `${location.dir}${location.id}-${i}.${ext}`;
+                        try {
                             const res = await fetch(imagePath);
                             if (res.ok) {
                                 imagePaths.push(imagePath);
                                 i++;
-                            } else {
+                                found = true;
                                 break;
                             }
+                        } catch {
+                            // Continue to the next extension
                         }
-                    } catch {
+                    }
+
+                    if (!found) {
                         break;
                     }
                 }

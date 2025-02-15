@@ -10,6 +10,10 @@ export interface Location {
     info2?: string;
     info3?: string;
   };
+  infoLink?: {
+    url: string;
+    text: string;
+  };
   facts?: {
     byggeår?: string;
     adresse?: string;
@@ -34,6 +38,10 @@ const locations: Location[] = [
       info1: 'Brusve gård ligger plassert ved Brusve bru over Levangerelva, i fonden av Brugata fra Levanger sentrum. Gården er delvis innbygget i et boligstrøk, men mot nordvest er det åpnet for et grøntareal med trær. Foruten den fredete hovedbygningen omfatter anlegget et gammelt stabbur og et nyere uthus.Brusve var fram til 1802 husmannsplass under vestre Ulve. Fra 1803 til 1883 var dette lensmannsgård for lensmennene Bardo Westrum, Ole Lynum og Bernt Oluf Lynum. I tillegg var Brusve et betydelig gårdsbruk. I folketellingen i 1835 er det oppført hele 11 tjenestefolk på gården. I 1889 kjøpte amtmann Peter Holst gården.',
       info2: 'Valget av utsendinger fra amtet til Riksforsamlingen på Eidsvold i 1814  foregikk på Brusve. Brusve nedre har også vært vertskap for kongelig besøk ifølge innberetningen: "Karl Johan bodde der under sit opphold i Trøndelagen 1838."',
       info3: 'Hovedbygningen består av to midtkammerbygninger og er satt opp i to omganger. Den nordvestre delen stod ferdig i 1803 og den sørøstre delen i 1811. Bygningen har profilert etasjeskille og gesims med tannsnitt. Taket har asymmetrisk anbrakte arker. Fasaden mot gården har 3 empireportaler med glatte halvsøyler, overlysvindu og høyt profilert overstykke med tannsnitt og romber i lavt relieff. I vinkel med hovedbygningen står stabburet som er i to etasjer med utvendig stående panel.Fra 1900 ble Brusve eid av flere; Sandstad, Vennes, Folden og Janke, og eiendommen ble etter hvert oppstykket og solgt til villatomter. I 1949 kjøpte Frol kommune det som var igjen av hus og jord, og ved kommunesammenslutningen 1.1.1962 ble Levanger kommune eier. I 1984 ble Levanger museum eier. Brusve gård eies i dag av Bymuseet i Levanger.',
+    },
+    infoLink: {
+      url: "https://www.levanger.kommune.no/_f/p1/i5757efa8-a2d9-4f9a-b492-71d8dfba0be3/byggeskikkprisen-2023-kandidat-1-brusve-gard.pdf",
+      text: "Brusve gård ble innstilt til Byggeskikkprisen Levanger kommune 2023"
     },
     facts: {
       byggeår: '1803',
