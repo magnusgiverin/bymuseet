@@ -23,18 +23,25 @@ const Information: React.FC<InformationProps> = ({ location }) => {
                         </div>
                     )}
                     <div className={`shadow-md bg-white rounded-0 md:rounded-md w-full flex flex-col py-8 px-4 md:p-8 ${location.facts ? 'lg:w-3/4' : ''}`}>
-                        <SubTitle text='informasjon'/>
+                        <SubTitle text='informasjon' />
                         <div className="flex flex-col gap-4">
                             {Object.entries(location.info)
                                 .map(([key, value]) => (
                                     <p key={key}>{value}</p>
                                 ))}
                         </div>
-                        {location.infoLink && (
-                            <a href={`${location.infoLink.url}`} target="_blank" className="mt-4 text-blue-600 hover:underline">
-                                {location.infoLink.text}
-                            </a>
-                        )}
+                        {
+                            location.infoLink && (
+                                <div className="flex flex-col">
+                                    {location.infoLink.map((link, i) => (
+                                        <a key={i} href={link
+                                            .url} target="_blank" className="mt-4 text-blue-600 hover:underline">
+                                            {link.text}
+                                        </a>
+                                    ))}
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
             ) : (
