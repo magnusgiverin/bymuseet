@@ -59,7 +59,7 @@ export const textContent = {
             contactMail: "bymuseetilevanger@gmail.com",
             contactPerson: "Kontaktperson: Ketil Vidar Iversen, tlf. ",
             contactPhone: "+47 905 04 996",
-            prices: "Priser 2025: Kr. 1500 uansett antall deltakere opp til 15 personer. Deretter kr. 150 per person over 15 personer.",
+            prices: "Priser 2025: Kr. 1500 uansett antall deltakere opp til 10 personer. Deretter kr. 150 per person over 10 personer.",
         },
         additional: {
             title: "Se også",
