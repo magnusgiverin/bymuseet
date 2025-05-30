@@ -58,12 +58,7 @@ const Tilbud = () => {
                         </div>
                     ))}
                 </span>
-                <Link href={utleie.infoLink1} target="_blank" className="flex text-blue-600 hover:underline mt-6">
-                    {utleie.infoLinkText1}
-                </Link>
-                <Link href={utleie.infoLink2} target="_blank" className="flex text-blue-600 hover:underline mt-6">
-                    {utleie.infoLinkText2}
-                </Link>
+                <p className="mt-2">{utleie.utleieInfo}</p>
                 <span className="flex flex-col md:flex-row xl:flex-col md:gap-4 xl:gap-0">
                     <Button icon="ArrowRight_sm" text={tilbud.buttonText} link={tilbud.buttonLink} />
                 </span>
