@@ -84,10 +84,7 @@ export const textContent = {
                 details: "Egner seg til møter og selskaper (f.eks. bryllup) for grupper på inntil 95 personer.",
             }
         ],
-        infoLinkText1: "Utleie av Brusve her",
-        infoLink1: "https://levafro.no/leie-brusve-gard/",
-        infoLinkText2: "Utleie av Dampskipsbrygga her",
-        infoLink2: "https://levafro.no/leie-brusve-gard-copy/",
+        utleieInfo: "Ønsker du å leie Brusve eller Dampskipsbrygga, kontakt Bjørn Moe: b66moe@gmail.com eller telefon 957 34 940.",
     },
     arrangement: {
         title: "Arrangement",

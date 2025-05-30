@@ -21,13 +21,7 @@ const Utleie = () => {
                         </div>
                     ))}
                 </span>
-
-                <Link href={utleie.infoLink1} target="_blank" className="flex text-blue-600 hover:underline mt-6">
-                    {utleie.infoLinkText1}
-                </Link>
-                <Link href={utleie.infoLink2} target="_blank" className="flex text-blue-600 hover:underline mt-6">
-                    {utleie.infoLinkText2}
-                </Link>
+                <p className="mt-2">{utleie.utleieInfo}</p>
                 <Button icon="ArrowRight_sm" text={"Se bilder"} link="/tilbud/bilder" />
             </div>
             <div className="h-60 w-full relative shadow-md md:rounded-b-md lg:rounded-s-none lg:rounded-e-md lg:h-auto lg:w-3/5">
