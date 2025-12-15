@@ -4,7 +4,7 @@ import { spacedText } from "@/app/Utils/spacedText";
 import Image from 'next/image';
 import locations from '@/app/Utils/data/locations';
 import Button from "../Components/Button";
-import LokaliteterBanner from "./lokaliteterBanner";
+import LokaliteterBanner from "./LokaliteterBanner";
 
 const Lokaliteter = () => {
     return (
