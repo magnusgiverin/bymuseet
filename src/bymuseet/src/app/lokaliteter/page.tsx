@@ -1,5 +1,3 @@
-'use client';
-
 import { spacedText } from "@/app/Utils/spacedText";
 import Image from 'next/image';
 import locations from '@/app/Utils/data/locations';

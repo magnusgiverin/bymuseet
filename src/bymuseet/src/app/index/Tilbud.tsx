@@ -1,10 +1,7 @@
 import { SubTitle } from "../Components/Title";
 import { textContent } from "../Utils/data/text";
-import Image from "next/image";
-import utleieBilde from "../../../public/images/pynt/tilbud-2.jpg";
 import { spacedText } from "../Utils/spacedText";
 import Button from "../Components/Button";
-import Link from "next/link";
 
 const Tilbud = () => {
     const { utleie, byvandring, tilbud } = textContent;
