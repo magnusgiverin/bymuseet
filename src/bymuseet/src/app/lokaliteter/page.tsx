@@ -2,12 +2,12 @@ import { spacedText } from "@/app/Utils/spacedText";
 import Image from 'next/image';
 import locations from '@/app/Utils/data/locations';
 import Button from "../Components/Button";
-// import LokaliteterBanner from "./LokaliteterBanner";
+import LokaliteterBanner from "./LokaliteterBanner";
 
 const Lokaliteter = () => {
     return (
         <div className="flex flex-col items-center justify-between mb-5 md:mb-10">
-            {/* <LokaliteterBanner /> */}
+            <LokaliteterBanner />
             <div className="flex flex-col gap-5 md:gap-10 md:mt-10">
                 {locations.map((loc) => (
                     <div
