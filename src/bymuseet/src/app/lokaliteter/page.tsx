@@ -2,12 +2,34 @@ import { spacedText } from "@/app/Utils/spacedText";
 import Image from 'next/image';
 import locations from '@/app/Utils/data/locations';
 import Button from "../Components/Button";
-import LokaliteterBanner from "./LokaliteterBanner";
 
 const Lokaliteter = () => {
     return (
         <div className="flex flex-col items-center justify-between mb-5 md:mb-10">
-            <LokaliteterBanner />
+            <div className="relative w-screen h-60 md:h-80 lg:h-96 sm:p-2 sm:px-2">
+                <Image
+                    src="/images/pynt/lokaliteter-banner.jpeg"
+                    alt="Background image"
+                    objectFit="cover"
+                    layout="fill"
+                    className="absolute inset-0 z-0"
+                />
+                <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center z-10">
+                    <div className="text-left rounded-2xl py-4 px-8 text-white"
+                        style={{
+                            backdropFilter: 'blur(40px)',
+                            WebkitBackdropFilter: 'blur(40px)'
+                        }}>
+                        <h1 className="text-2xl font-bold whitespace-pre-wrap">{spacedText("våre lokaliteter")}</h1>
+                        <p className="text-sm whitespace-pre-wrap">{spacedText("utforsk trebyen i levanger")}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="lg:hidden my-8 flex flex-col items-center gap-2 w-full">
+                <h1 className="text-base text-green-800 font-bold text-center whitespace-pre-wrap">{spacedText("våre lokaliteter")}</h1>
+                <p className="text-sm whitespace-pre-wrap">{spacedText("utforsk trebyen i levanger")}</p>
+            </div>
             <div className="flex flex-col gap-5 md:gap-10 md:mt-10">
                 {locations.map((loc) => (
                     <div
