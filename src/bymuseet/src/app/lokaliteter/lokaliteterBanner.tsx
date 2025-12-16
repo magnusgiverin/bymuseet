@@ -1,5 +1,4 @@
 import Image from "next/image";
-import banner from "../../../public/images/pynt/lokaliteter-banner.jpeg";
 import { spacedText } from "../Utils/spacedText";
 
 export default function LokaliteterBanner() {
@@ -7,7 +6,7 @@ export default function LokaliteterBanner() {
         <>
             <div className="relative w-screen h-60 md:h-80 lg:h-96 sm:p-2 sm:px-2">
                 <Image
-                    src={banner}
+                    src="/images/pynt/lokaliteter-banner.jpeg"
                     alt="Background image"
                     objectFit="cover"
                     layout="fill"
