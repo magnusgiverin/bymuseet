@@ -57,8 +57,8 @@ export const textContent = {
             time: "Tidsbruk: 1–2 timer.",
             contact: "Kontakt oss for priser og bestilling: ",
             contactMail: "bymuseetilevanger@gmail.com",
-            // contactPerson: "Kontaktperson: Ketil Vidar Iversen, tlf. ",
-            // contactPhone: "+47 905 04 996",
+            contactPerson: "Kontaktperson: Bjørn Moe, tlf. ",
+            contactPhone: "+47 957 34 940",
             prices: "Priser 2025: Kr. 1500 uansett antall deltakere opp til 10 personer. Deretter kr. 150 per person over 10 personer.",
         },
         additional: {
