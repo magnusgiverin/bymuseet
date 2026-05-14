@@ -27,12 +27,12 @@ const Byvandring = () => {
                             {byvandring.info.contactMail}
                         </a>
                     </p>
-                    <p>
+                    {/* <p>
                         {byvandring.info.contactPerson}
                         <a href={`tel:${byvandring.info.contactPhone}`} className="text-blue-600 hover:underline">
                             {byvandring.info.contactPhone}
                         </a>
-                    </p>
+                    </p> */}
                     <p>{byvandring.info.prices}</p>
                     {/* Additional Links Section */}
                     <p className="font-bold text-green-800 mt-3 whitespace-pre-wrap">{spacedText(byvandring.additional.title + ":")}</p>
