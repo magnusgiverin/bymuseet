@@ -18,7 +18,7 @@ const Utleie = () => {
                         <div key={index} className="flex flex-col gap-2">
                             <p className="font-bold text-green-800 whitespace-pre-wrap">{spacedText(option.title)}</p>
                             <p>{option.details}</p>
-                            <table className="w-full max-w-md text-sm">
+                            <table className="w-full text-sm">
                                 <tbody>
                                     {option.prices.map((p) => (
                                         <tr key={p.label} className="border-b border-gray-200 last:border-0">
