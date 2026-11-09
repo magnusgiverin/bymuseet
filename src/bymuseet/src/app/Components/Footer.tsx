@@ -36,7 +36,7 @@ const Footer = () => {
                 <Link href="https://www.facebook.com/bymuseetilevanger" target="_blank">
                   <Icons name="Facebook" />
                 </Link>
-                <Link href="https://www.linkedin.com/in/magnus-giverin-5344b5188/" target="_blank">
+                <Link href="https://www.linkedin.com/in/magnus-andreas-giverin-5344b5188/" target="_blank">
                   <Icons name="LinkedIn" />
                 </Link>
               </div>
