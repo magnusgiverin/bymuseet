@@ -11,20 +11,31 @@ const Utleie = () => {
 
     return (
         <div className="flex flex-col lg:flex-row w-full mb-5 md:mb-10">
-            <div className="bg-white py-8 px-4 md:p-8 md:rounded-t-md lg:rounded-e-none lg:rounded-s-md shadow-md lg:w-2/5 w-full">
+            <div className="bg-white py-8 px-4 md:p-8 md:rounded-t-md lg:rounded-e-none lg:rounded-s-md shadow-md lg:w-3/5 w-full">
                 <SubTitle text={utleie.title} />
                 <span className="flex flex-col gap-4">
                     {utleie.options.map((option, index) => (
                         <div key={index} className="flex flex-col gap-2">
                             <p className="font-bold text-green-800 whitespace-pre-wrap">{spacedText(option.title)}</p>
                             <p>{option.details}</p>
+                            <table className="w-full max-w-md text-sm">
+                                <tbody>
+                                    {option.prices.map((p) => (
+                                        <tr key={p.label} className="border-b border-gray-200 last:border-0">
+                                            <td className="py-1 pr-4">{p.label}</td>
+                                            <td className="py-1 text-right whitespace-nowrap font-semibold">{p.price}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
                     ))}
                 </span>
+                <p className="mt-4 text-sm italic">{utleie.pricesNote}</p>
                 <p className="mt-2">{utleie.utleieInfo}</p>
                 <Button icon="ArrowRight_sm" text={"Se bilder"} link="/tilbud/bilder" />
             </div>
-            <div className="h-60 w-full relative shadow-md md:rounded-b-md lg:rounded-s-none lg:rounded-e-md lg:h-auto lg:w-3/5">
+            <div className="h-60 w-full relative shadow-md md:rounded-b-md lg:rounded-s-none lg:rounded-e-md lg:h-auto lg:w-2/5">
                 <Image
                     src={utleieBilde}
                     alt="Sjøgata 1"

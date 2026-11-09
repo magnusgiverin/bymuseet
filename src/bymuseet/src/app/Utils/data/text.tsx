@@ -77,13 +77,27 @@ export const textContent = {
             {
                 title: "Brusve gård",
                 details: "Brusve gård egner seg til ulike arrangementer som for eksempel møter, familieselskaper, konfirmasjoner for grupper på inntil 35 personer.",
-
+                prices: [
+                    { label: "Kjøkken og kafé", price: "kr 2000" },
+                    { label: "Kjøkken, kafé og stuene i 1. etasje", price: "kr 3000" },
+                    { label: "Blåsalen (møterom) 2. etasje", price: "kr 1000" },
+                    { label: "Annet", price: "etter avtale" },
+                ],
             },
             {
                 title: "Dampskipsbrygga",
                 details: "Egner seg til møter og selskaper (f.eks. bryllup) for grupper på inntil 95 personer.",
+                prices: [
+                    { label: "Fredag til lørdag", price: "kr 4500" },
+                    { label: "Lørdag til søndag", price: "kr 4500" },
+                    { label: "Fredag til søndag", price: "kr 8500" },
+                    { label: "Møter, dagtid", price: "kr 2500" },
+                    { label: "Møter, ettermiddag", price: "kr 2500" },
+                    { label: "Korte møter, pr. time", price: "kr 500" },
+                ],
             }
         ],
+        pricesNote: "Alle priser er inkludert vasking av lokalet.",
         utleieInfo: "Ønsker du å leie Brusve eller Dampskipsbrygga, kontakt Bjørn Moe: b66moe@gmail.com eller telefon 957 34 940.",
     },
     arrangement: {
@@ -97,7 +111,7 @@ export const textContent = {
             "Marsimartnan",
             "Levangermartnan"
         ],
-        moreInfoLink: "https://www.levanger.kommune.no/tjenester/kultur-idrett-og-fritid/kommunens-arlige-arrangementer/"
+        moreInfoLink: "https://www.levanger.kommune.no/tjenester/kultur-idrett-og-fritid/kommunens-faste-arrangement-og-tilrettelagte-aktiviteter/"
     },
     omSide: {
         title: "Om organiasjonen vår",
