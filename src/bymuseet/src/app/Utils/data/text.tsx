@@ -66,8 +66,9 @@ export const textContent = {
             links: [
                 { buttonText: "Digital Levangertur", link: "https://www.opplevinnherred.no/levanger/digital-tur-levanger/" },
                 { buttonText: "Levanger som fredet by", link: "https://riksantikvaren.no/kulturhistorie/levanger-ein-historisk-og-levande-by/" },
-                { buttonText: "Den kulturelle skolesekken", link: "https://www.denkulturelleskolesekken.no/utforsk-produksjoner-i-dks/?produksjon=15321" },
+                { buttonText: "Den kulturelle skolesekken", link: "https://www.denkulturelleskolesekken.no/utforsk-produksjoner-i-dks/?produksjon=24352" },
                 { buttonText: "Historiske turtips", link: "https://historisketurtips.no/levanger/" },
+                { buttonText: "Trehusbyen Levanger", link: "https://www.youtube.com/watch?v=vA40Cy60qw0" },
             ]
         }
     },
